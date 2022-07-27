@@ -1,5 +1,5 @@
 ---
-title: "Research and Development"
+title: "R&D Text Corpora Filtering and Data Mining:Case Study on Digitalization"
 ---
 
 
@@ -7,33 +7,36 @@ title: "Research and Development"
 ![ ](www/black-logo.png)
 
 
-# **Goal**
-Identify characteristics of individual Soldiers that contribute to unit performance
+# **Research Question**
+How can we characterize the R&D digitalization research area that the funding supported? What are trends in the digitalization research area?
 
-# **Why**
-Key to extending work to unit performance without requiring unit-level measurement 
+# **Prior Work**
+Topic modeling, term matching, and latent semantic indexing on the case study topic of pandemics.   
 
-# **Method**
-##Document Analysis  
 
-Document analysis is a “form of qualitative research in which documents are interpreted by the researcher to give voice and meaning around an assessment topic" (Bowen, 2009)  
+# **Method**  
+##Literature Review   
+A literature review was conducted to define digitalizaiton and explore different models that can be used to determine which abstracts pertain to it as a theme.  
 
-Our Approach: A Mixed Method Thematic Approach  
+##Word Vectorization  
+The models of TF-IDF and Doc2Vec were used to turn a corpus of abstracts into vectors.   
 
-##Natural Language Processing  
+###TF-IDF  
 
-Natural language processing (NLP) "strives to build machines that understand and respond to text data much the same way humans do" (IBM, 2022)  
+Term Frequency- Inverse Document Frequency is a vectorization method that represents a document as a set of vecotrized words.  
+
+###Doc2Vec  
+
+Doc2Vec is a different way to vectorize a document that takes into account the order words appear relative to others. It looks at the documents as a whole as opposed to individual words.  
+
+
+
+##Text Classifiers  
+
+The vecotrized words were put into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data.
+
   
-All NLP for this project was run on a corpus composed of the 10 documents on which document analysis was conducted. The documents were clean by removing stop words (i.e. the, and, of) and legitimatizing each word. Lemmatizing transforms each word to a common base word.
-  
-###*Cooccurance*  
-Cooccurance visualizes word pairs that occur together most frequently in the corpus.  
-
-###*Term Frequency- Inverse Document Frequency*  
-TF-IDF is a text classification method that reflects the importance of a word to a document in a corpus of documents.  
-  
-###*Latent Dirichlet Allocation*  
-LDA is a Bayesian topic model that discovers the topics in a corpus of documents and the concurrent probability that they will occur. 
+ 
 
 
 

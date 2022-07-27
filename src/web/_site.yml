@@ -8,7 +8,7 @@ output:
     toc_float: true
     css: style.css
 navbar:
-  title: "Soldier Characteristics that Contribute to Unit Performance"
+  title: "R&D Text Corpora Filtering and Data Mining:Case Study on Digitalization"
   left:
     - text: "Overview"
       href: index.html
@@ -20,9 +20,9 @@ navbar:
       menu:
         - text: Overview
           href: findings-overview.html
-        - text: Qualitative Analysis
+        - text: Text Vectorization
           href: qualitative-analysis.html
-        - text: Natural Language Processing
+        - text: Text Classification
           href: nlp.html
     - text: "Team"
       href: team.html
