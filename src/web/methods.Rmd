@@ -1,4 +1,21 @@
 ---
 title: "Methods"
 ---
-
+# 1. Definition of Digitialization  
+## Initial Definition  
+Reviewed OECD literature to create a definition of digitialization. All of the definitions were incredibly similar, outside sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) were explored to create a more comprehensive definition.  
+## Expanded Definition  
+The completed definition of digitialization was incredibly broad, so after meeting with the project's stakeholders, it was decided to focus more closely on the area of Big Data. A definition for this subtheme was developed by looking at dictionary and academic sources.  
+# 2. Literature Review of Methods   
+  
+  
+# 3. KNN  
+  
+  
+# 4. TF-IDF   
+  
+  
+# 5. Training Data Set    
+  
+  
+# 6. Full Classification Model
