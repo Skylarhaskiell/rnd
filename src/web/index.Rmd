@@ -7,7 +7,7 @@ title: "R&D Text Corpora Filtering and Data Mining:Case Study on Digitalization"
 ![ ](www/black-logo.png)
 
 
-# **Research Question**
+# **Research Kristian**
 How can we characterize the R&D digitalization research area that the funding supported? What are trends in the digitalization research area?
 
 # **Prior Work**
