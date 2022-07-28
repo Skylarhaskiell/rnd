@@ -30,7 +30,7 @@ a {
     position: relative;
     margin-bottom: 2em;
     /* liner gradient tints the image darker for readability*/
-    background-image: url(www/header.jpg); 
+    background-image: url(www/DSPG2022-logo.png); 
     /*linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ) */
     height: 400px;
     background-size: cover;
@@ -47,7 +47,7 @@ a {
   padding-bottom: 0.5em
   text-transform: uppercase;
   text-align: center;
-  display: block; /* Change to `display: none` for no top text */
+  display: none; /* Change to `display: none` for no top text */
   color: #232D4B;
 }
 
@@ -58,7 +58,7 @@ a {
   font-size: 68px;
   text-transform: uppercase;
   text-align: center;
-  display: block; /* Change to `display: none` for no bottom text */
+  display: none; /* Change to `display: none` for no bottom text */
   color: #232D4B;
   margin-bottom: 2.5rem;
   font-weight: bold;
