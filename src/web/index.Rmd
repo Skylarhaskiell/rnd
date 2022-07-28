@@ -1,17 +1,26 @@
 ---
 title: "R&D Text Corpora Filtering and Data Mining:Case Study on Digitalization"
+output:
+  html_document:
+    includes:
+      in_header: hero-image.html
 ---
 
 
 
 ![ ](www/black-logo.png)
 
+#**Project Background**  
+The [Federal RePORTER](https://wayback.archive-it.org/18816/20220223125200/https:/federalreporter.nih.gov/FileDownload) database contains information pertaining to 1.2 million grant abstracts that have recieved funding between 2008 and 2020.  
 
 # **Research Question**
 How can we characterize the R&D digitalization research area that the funding supported? What are trends in the digitalization research area?
 
 # **Prior Work**
-Topic modeling, term matching, and latent semantic indexing on the case study topic of pandemics.   
+Topic modeling, term matching, and latent semantic indexing on the [case study topic of pandemics.](https://github.com/uva-bi-sdad/publicrd/tree/master/src/Paper/05_case_studies)  
+
+#**Sponsor**  
+National Center for Science and Engineering Statistics (NCES), a principal staistical agency located within the National Science Foundation
 
 
 # **Method**  
