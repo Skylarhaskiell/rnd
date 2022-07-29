@@ -3,19 +3,52 @@ title: "Methods"
 ---
 # 1. Definition of Digitialization  
 ## Initial Definition  
-Reviewed OECD literature to create a definition of digitialization. All of the definitions were incredibly similar, outside sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) were explored to create a more comprehensive definition.  
+We reviewed Organisation for Economic Co-operation and Development (OECD) literature to define digitialization. Our initial definition was "Digitalization is the innovative application and adoption of emerging technologies and data that promote social, economic, and cultural progress." We also created a list of key technologies that were consistently mentioned as key to digitalization: internet of things, artificial intelligence, 5G, distributive ledger technology, cloud computing,  robotization, autonomous machines, big data, and cloud computing among many others. 
+
+#### Finalized Definition  
+All of the literature sources were from the OECD and most from the G20 summit so the definitions were very similar. We looked into a broader range of sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) to create a more precise definition: "Digitalization is the innovative adoption of emerging technologies to transform analog data into digital language, which, in turn promotes social, economic, and cultural progress." The key difference in this definition is that digitalization is focused on the adoption of these technologies rather than the conversion of analogue data to digital data (digitazation) and applying it to the world/businesses (digital transformation).
+
 ## Expanded Definition  
-The completed definition of digitialization was incredibly broad, so after meeting with the project's stakeholders, it was decided to focus more closely on the area of Big Data. A definition for this subtheme was developed by looking at dictionary and academic sources.  
+Our complete definition of digitialization was still incredibly broad and could encapsulate most of the technological change in the past couple of centuries, so after speaking with our project's stakeholders, we decided to focus more closely on the theme of Big Data. A definition for this subtheme was developed by looking at dictionaries and academic sources such as the OECD. We used three different definitions:
+
+####Oxford Languages (Google) Definition: 
+“extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.”
+
+####Gartner Definition: 
+“‘Big data’ is high-volume, -velocity and -variety information assets that demand cost-effective, innovative forms of information processing for enhanced insight and decision making.”
+
+####UNCTAD 2019 Digital Economy Report Definition: 
+“The term ‘big data’ has been popularized to denote the broader range of data that are increasingly available to individuals, firms and societies. The ‘big’ in big data can be defined along a number of axes: in terms of the growing volume of data available (e.g. from online transactions, sensors, devices); the wider variety of data that might be interpreted and combined with other data (e.g. unstructured data such as video and internet logs); and velocity, where data is generated very rapidly, and sometimes requires realtime interpretation (Laney, 2001).”
+
+<br> 
+
 # 2. Literature Review of Methods   
   
   
-# 3. KNN  
+# 3. TF-IDF and Doc2Vec  
+####TF-IDF  
+Term Frequency-Inverse Document Frequency is a vectorization method that represents a document as a set of vectorized words.  
+
+####Doc2Vec  
+Doc2Vec is another method to vectorize a document, which takes into account the semantics of the words as they appear in the abstracts. For each document/abstract, Doc2Vec creates a matrix of the words in the document as well as a paragraph ID allowing for the document to be processed as a whole as opposed to the individual words, which Word2Vec does,
   
-  
-# 4. TF-IDF   
+# 4. KNN
+
   
   
 # 5. Training Data Set    
-  
+The KNN model requires a labelled training set. The goal is to build a balanced sample of abstracts related to big data and not big data.
+<br> 
+<br> 
+We first identified abstracts that are likely related to big data by using term-matching to find the subset of abstract that contains the words big-data/big_data/big datum. 4684 abstracts (of the 1143869 abstracts) contained one or more of these words. We randomly drew 600 abstracts from this set that included big data and drew 600 abstracts that did not include these key words. 
+<br> 
+<br> 
+Using our three definitions of big data, we trained 12 experts to differentiate big data and non big data abstracts. Each expert was randomly assigned 100 abstracts. To capture potential biases between experts in their understanding of the big data definition during the training (meaning that different expert may have understood differently the definition and provide different labelling of abstracts) we ran the following additional experiment. From the sample of 100 abstracts assigned to each expert, we randomly drew 10 abstracts and randomly assigned that to another expert. Thus, among the 1200 abstracts, 60 of them would be labelled by 2 experts so that we could compare their labelling. 
+<br> 
+<br> 
+![Accuracy](www/2ExpertAccuracy.png){width=60% }</center>  
+<br> 
+<br> 
+Overall, 21.6% [(8+11)/(8+11+47+22)] of the abstracts were classified differently by experts, traducing a precision of 78.4 %. The error of assigning a non big data related abstract to big data is larger than the error of assigning a big data related abstract to non big data. For example, taking expert 1 as ground true, the error of expert 2 assigning a non big data abstract as big data is 26% [8/(22+8)]. However, the error of assigning a big data related abstracts as non-big data is 19% [11/(47+11)]. To conclude, experts, for the most part, have a similar understanding of the definition of big data. 
   
 # 6. Full Classification Model
