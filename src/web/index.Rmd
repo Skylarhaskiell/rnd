@@ -1,17 +1,13 @@
 ---
-title: "R&D Text Corpora Filtering and Data Mining:Case Study on Digitalization"
+title: "R&D Emerging Digitalization Trends"
 output:
   html_document:
     includes:
       in_header: hero-image.html
 ---
 
-
-
-![ ](www/black-logo.png)
-
 #**Project Background**  
-The [Federal RePORTER](https://wayback.archive-it.org/18816/20220223125200/https:/federalreporter.nih.gov/FileDownload) database contains information pertaining to 1.2 million grant abstracts that have recieved funding between 2008 and 2020.  
+Around 21% of all research and development (R&D) funding in the United States is provided by the federal government. The [Federal RePORTER](https://wayback.archive-it.org/18816/20220223125200/https:/federalreporter.nih.gov/FileDownload) database contains 1.2 million grant abstracts and metadata from HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA between 2008 and 2020.
 
 # **Research Question**
 How can we characterize the R&D digitalization research area that the funding supported? What are trends in the digitalization research area?
@@ -20,29 +16,20 @@ How can we characterize the R&D digitalization research area that the funding su
 Topic modeling, term matching, and latent semantic indexing on the [case study topic of pandemics.](https://github.com/uva-bi-sdad/publicrd/tree/master/src/Paper/05_case_studies)  
 
 #**Sponsor**  
-National Center for Science and Engineering Statistics (NCES), a principal staistical agency located within the National Science Foundation
+This project is sponsored by the National Center for Science and Engineering Statistics (NCSES), a principal staistical agency located within the National Science Foundation. The project stakeholders from NCSES are John Jankowski, Senior Economic Advisor, and Audrey Kindlon, Survey Statistician.
 
 
 # **Method**  
 ##Literature Review   
-A literature review was conducted to define digitalizaiton and explore different models that can be used to determine which abstracts pertain to it as a theme.  
+We conducted a literature review to define digitalizaiton and sub-themes of big data. These definitions were used to create our training set for our supervised learning methods. We also explored different learning models that could be used to determine which abstracts pertain to certain themes.  
+
 
 ##Word Vectorization  
-The models of TF-IDF and Doc2Vec were used to turn a corpus of abstracts into vectors.   
-
-###TF-IDF  
-
-Term Frequency- Inverse Document Frequency is a vectorization method that represents a document as a set of vecotrized words.  
-
-###Doc2Vec  
-
-Doc2Vec is a different way to vectorize a document that takes into account the order words appear relative to others. It looks at the documents as a whole as opposed to individual words.  
-
+We used TF-IDF and Doc2Vec models to transform our corpus of abstracts into vector representations of each document.   
 
 
 ##Text Classifiers  
-
-The vecotrized words were put into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data.
+The vectorized words were inputed into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data.
 
   
  

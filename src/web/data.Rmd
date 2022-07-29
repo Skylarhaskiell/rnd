@@ -78,16 +78,16 @@ title: "Data"
 ### KNN on TF-IDF Vectorization
 ```{r echo=FALSE}
 library(rmarkdown)
-paged_table(read.csv("/home/seh6fy/git/rnd/src/dataframe.csv"))
+#paged_table(read.csv("/home/seh6fy/git/rnd/src/dataframe.csv"))
 ```
 Above can be seen the predictions made with a KNN classifier run on a TF-IDF data set. It can be seen that the classifier predicted that the abstracts were both big data and not big data.  
 ```{r echo=FALSE}
 library(rmarkdown)
 # library(dplyr)
-df <-read.csv("/home/seh6fy/git/rnd/src/dataframe.csv")
+#df <-read.csv("/home/seh6fy/git/rnd/src/dataframe.csv")
 
-table(df['PREDICTIONS'])
+#table(df['PREDICTIONS'])
 
-table(df['DEPARTMENT'])
+#table(df['DEPARTMENT'])
 ```
 The first table above represents the counts of the predictions as to whether an abstract in the training set was big data or not. The second table represents the number of actual data in the training set that were big data or not. 

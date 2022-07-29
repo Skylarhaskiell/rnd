@@ -4,19 +4,25 @@ title: "Team"
 
 # Interns  
 <br> 
-![Skylar Haskiell](www/skylar_pic.jpg){width=60% }</center>  
+![Skylar Haskiell](www/skylar_pic.jpg){width=40% }</center>  
 
 
 ## *Skylar Haskiell*
-Skylar is a rising third year at the University of Virginia pursuing a B.S. in Computer Science.  
+Data Science for the Public Good Intern
+<!-- Skylar is a rising third year at the University of Virginia pursuing a B.S. in Computer Science.   -->  
 
 <br>   
 
 <br> 
 
+![Kristian Olsson](www/kristian.jpeg){width=40% }</center>  
+
 ## *Kristian Olsson*  
-  
-f  
+Data Science for the Public Good Intern
+<!-- Kristian is a rising third year at the University of Virginia pursuing a B.A. in Mathematics and B.A in Statistics.   -->    
+<br>   
+
+<br> 
   
 # Research Scientists  
 <br> 

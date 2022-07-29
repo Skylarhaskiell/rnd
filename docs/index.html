@@ -11,7 +11,7 @@
 
 
 
-<title>R&amp;D Text Corpora Filtering and Data Mining:Case Study on Digitalization</title>
+<title>R&amp;D Emerging Digitalization Trends</title>
 
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -378,18 +378,14 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">R&amp;D Text Corpora Filtering and Data Mining:Case Study on Digitalization</h1>
+<h1 class="title toc-ignore">R&amp;D Emerging Digitalization Trends</h1>
 
 </div>
 
 
-<div class="figure">
-<img src="www/black-logo.png" />
-
-</div>
 <div id="project-background" class="section level1">
 <h1><strong>Project Background</strong></h1>
-<p>The <a href="https://wayback.archive-it.org/18816/20220223125200/https:/federalreporter.nih.gov/FileDownload">Federal RePORTER</a> database contains information pertaining to 1.2 million grant abstracts that have recieved funding between 2008 and 2020.</p>
+<p>Around 21% of all research and development (R&amp;D) funding in the United States is provided by the federal government. The <a href="https://wayback.archive-it.org/18816/20220223125200/https:/federalreporter.nih.gov/FileDownload">Federal RePORTER</a> database contains 1.2 million grant abstracts and metadata from HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA between 2008 and 2020.</p>
 </div>
 <div id="research-question" class="section level1">
 <h1><strong>Research Question</strong></h1>
@@ -401,29 +397,21 @@ div.tocify {
 </div>
 <div id="sponsor" class="section level1">
 <h1><strong>Sponsor</strong></h1>
-<p>National Center for Science and Engineering Statistics (NCES), a principal staistical agency located within the National Science Foundation</p>
+<p>This project is sponsored by the National Center for Science and Engineering Statistics (NCSES), a principal staistical agency located within the National Science Foundation. The project stakeholders from NCSES are John Jankowski, Senior Economic Advisor, and Audrey Kindlon, Survey Statistician.</p>
 </div>
 <div id="method" class="section level1">
 <h1><strong>Method</strong></h1>
 <div id="literature-review" class="section level2">
 <h2>Literature Review</h2>
-<p>A literature review was conducted to define digitalizaiton and explore different models that can be used to determine which abstracts pertain to it as a theme.</p>
+<p>We conducted a literature review to define digitalizaiton and sub-themes of big data. These definitions were used to create our training set for our supervised learning methods. We also explored different learning models that could be used to determine which abstracts pertain to certain themes.</p>
 </div>
 <div id="word-vectorization" class="section level2">
 <h2>Word Vectorization</h2>
-<p>The models of TF-IDF and Doc2Vec were used to turn a corpus of abstracts into vectors.</p>
-<div id="tf-idf" class="section level3">
-<h3>TF-IDF</h3>
-<p>Term Frequency- Inverse Document Frequency is a vectorization method that represents a document as a set of vecotrized words.</p>
-</div>
-<div id="doc2vec" class="section level3">
-<h3>Doc2Vec</h3>
-<p>Doc2Vec is a different way to vectorize a document that takes into account the order words appear relative to others. It looks at the documents as a whole as opposed to individual words.</p>
-</div>
+<p>We used TF-IDF and Doc2Vec models to transform our corpus of abstracts into vector representations of each document.</p>
 </div>
 <div id="text-classifiers" class="section level2">
 <h2>Text Classifiers</h2>
-<p>The vecotrized words were put into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data.</p>
+<p>The vectorized words were inputed into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data.</p>
 <!-- Here's how you make a list: -->
 <!-- *Tips for making figures look good:* -->
 <!-- - Make text sizes BIG -->
