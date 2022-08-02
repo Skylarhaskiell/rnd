@@ -54,7 +54,7 @@ Doc2Vec is another method to vectorize a document, which takes into account the 
 
 ![Supervised vs Unsupervised](www/supervised.PNG)
 We used a supervised learning approach to label abstracts as big data related or not. Compared to an unsupervised method, this approach allows us to identify abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. 
-![KNN](www/KNN.PNG)  
+![KNN](www/knn.PNG)  
 The method works by looking at the vecotrization of each abstract and classifying it into a class based on it's nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.  
 
 ##Application  
