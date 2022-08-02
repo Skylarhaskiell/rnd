@@ -2,7 +2,9 @@
 title: "Findings Overview"
 
 ---
-#
+#Text Vectorizaiton  
+#Text Classificaiton  
+
 
 
 

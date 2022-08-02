@@ -385,19 +385,27 @@ div.tocify {
 
 <div id="project-background" class="section level1">
 <h1><strong>Project Background</strong></h1>
-<p>Around 21% of all research and development (R&amp;D) funding in the United States is provided by the federal government. The <a href="https://wayback.archive-it.org/18816/20220223125200/https:/federalreporter.nih.gov/FileDownload">Federal RePORTER</a> database contains 1.2 million grant abstracts and metadata from HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA between 2008 and 2020.</p>
+<p>Research and development (R&amp;D) is defined by the Organisation for Economic Co-operation and Development (OECD, 2015) as “creative and systematic work undertaken in order to increase the stock of knowledge – including knowledge of humankind, culture and society – and to devise new applications of available knowledge”. R&amp;D is critical to a country’s development. In the United States (U.S.), R&amp;D spending increased yearly from 2010 to 2017, averaging $21 billion annually. In 2018 and 2019, there were even greater increases in R&amp;D spending from the previous years, coming out to around $50 billion addition expenditures. In addition, the ratio of national R&amp;D spending to national gross domestic product (GDP), a common metric of a nation’s R&amp;D effort, has steadily risen in the U.S. since the mid-1990’s. Currently, nearly 21% of all U.S. R&amp;D funding is provided by the federal government (National Center for Science and Engineering Statistics [NCSES], 2021b); however, there is little data indicating the specific R&amp;D areas that this funding supports.</p>
 </div>
 <div id="research-question" class="section level1">
 <h1><strong>Research Question</strong></h1>
 <p>How can we characterize the R&amp;D digitalization research area that the funding supported? What are trends in the digitalization research area?</p>
+<div id="other-areas-of-interest" class="section level2">
+<h2>Other Areas of Interest</h2>
+<p>How can we determine which abstracts relate to a particular sub-theme? What are the trends in the sub-theme of big data?</p>
+<p align="center">
+<img src="www/nsf.png" alt="NSF" />
+</p>
 </div>
-<div id="prior-work" class="section level1">
-<h1><strong>Prior Work</strong></h1>
-<p>Topic modeling, term matching, and latent semantic indexing on the <a href="https://github.com/uva-bi-sdad/publicrd/tree/master/src/Paper/05_case_studies">case study topic of pandemics.</a></p>
 </div>
 <div id="sponsor" class="section level1">
 <h1><strong>Sponsor</strong></h1>
 <p>This project is sponsored by the National Center for Science and Engineering Statistics (NCSES), a principal staistical agency located within the National Science Foundation. The project stakeholders from NCSES are John Jankowski, Senior Economic Advisor, and Audrey Kindlon, Survey Statistician.</p>
+</div>
+<div id="data" class="section level1">
+<h1><strong>Data</strong></h1>
+<p>We use Federal RePORTER, a recently retired publicly available database of federally funded R&amp;D grants, to characterize the R&amp;D research areas that the funding supported. This database was designed to be “a repository of data and tools” that “promote[d] transparency and engage[d] the public, the research community, and agencies to describe federal science research investments and provide empirical data for science policy” (U.S. Department of Health and Human Services [HHS], 2020, March 6-a, 2020, March 6-b).</p>
+<p>Federal RePORTER contained project abstracts and related metadata for more than 1 million federally funded grants from science and technology federal agencies beginning in fiscal year (FY) 2000; however large scale reporting began in FY 2008. Project metadata included the title, funding agency, FY, and other information such as the principal investigator, organization, start date, and FY total cost. Historically, all of the project data was submitted to Federal RePORTER by the individual agencies themselves; however, this was recently changed and Federal RePORTER downloaded some agency data directly from Research.gov</p>
 </div>
 <div id="method" class="section level1">
 <h1><strong>Method</strong></h1>
@@ -405,18 +413,13 @@ div.tocify {
 <h2>Literature Review</h2>
 <p>We conducted a literature review to define digitalizaiton and sub-themes of big data. These definitions were used to create our training set for our supervised learning methods. We also explored different learning models that could be used to determine which abstracts pertain to certain themes.</p>
 </div>
-<div id="word-vectorization" class="section level2">
-<h2>Word Vectorization</h2>
-<p>We used TF-IDF and Doc2Vec models to transform our corpus of abstracts into vector representations of each document.</p>
+<div id="text-vectorization" class="section level2">
+<h2>Text Vectorization</h2>
+<p>We used TF-IDF and Doc2Vec models to transform our corpus of abstracts into vector representations of each document. The vector representation allowed the corpus to be transformed into a format upon which text classificaiton methods could be run.</p>
 </div>
 <div id="text-classifiers" class="section level2">
 <h2>Text Classifiers</h2>
-<p>The vectorized words were inputed into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data.</p>
-<!-- Here's how you make a list: -->
-<!-- *Tips for making figures look good:* -->
-<!-- - Make text sizes BIG -->
-<!-- - Stick to the same colors -->
-<!-- - Decide to add titles, captions, etc in the figures OR add on the website for all figures -->
+<p>The vectorized words were inputed into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data. From the classifier, XXXXXX documents were determined to be related to the subtheme of big data.</p>
 </div>
 </div>
 

@@ -2,10 +2,7 @@
 title: "Text Vectorization"
 output: html_document
 ---
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 813f87eb3f4ad764aebb3eebee0c10f6f8375161
+#TF-IDF  
+#Doc2Vec  
 
 

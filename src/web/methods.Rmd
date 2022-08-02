@@ -1,54 +1,69 @@
 ---
 title: "Methods"
 ---
-# 1. Definition of Digitialization  
+# **1. Definition of Digitialization**  
 ## Initial Definition  
 We reviewed Organisation for Economic Co-operation and Development (OECD) literature to define digitialization. Our initial definition was "Digitalization is the innovative application and adoption of emerging technologies and data that promote social, economic, and cultural progress." We also created a list of key technologies that were consistently mentioned as key to digitalization: internet of things, artificial intelligence, 5G, distributive ledger technology, cloud computing,  robotization, autonomous machines, big data, and cloud computing among many others. 
 
-#### Finalized Definition  
+## Finalized Definition  
 All of the literature sources were from the OECD and most from the G20 summit so the definitions were very similar. We looked into a broader range of sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) to create a more precise definition: "Digitalization is the innovative adoption of emerging technologies to transform analog data into digital language, which, in turn promotes social, economic, and cultural progress." The key difference in this definition is that digitalization is focused on the adoption of these technologies rather than the conversion of analogue data to digital data (digitazation) and applying it to the world/businesses (digital transformation).
 
 ## Expanded Definition  
 Our complete definition of digitialization was still incredibly broad and could encapsulate most of the technological change in the past couple of centuries, so after speaking with our project's stakeholders, we decided to focus more closely on the theme of Big Data. A definition for this subtheme was developed by looking at dictionaries and academic sources such as the OECD. We used three different definitions:
 
-####Oxford Languages (Google) Definition: 
+###Oxford Languages (Google) Definition: 
 “extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.”
 
-####Gartner Definition: 
+###Gartner Definition: 
 “‘Big data’ is high-volume, -velocity and -variety information assets that demand cost-effective, innovative forms of information processing for enhanced insight and decision making.”
 
-####UNCTAD 2019 Digital Economy Report Definition: 
+###UNCTAD 2019 Digital Economy Report Definition: 
 “The term ‘big data’ has been popularized to denote the broader range of data that are increasingly available to individuals, firms and societies. The ‘big’ in big data can be defined along a number of axes: in terms of the growing volume of data available (e.g. from online transactions, sensors, devices); the wider variety of data that might be interpreted and combined with other data (e.g. unstructured data such as video and internet logs); and velocity, where data is generated very rapidly, and sometimes requires realtime interpretation (Laney, 2001).”
 
 <br> 
 
-# 2. Literature Review of Methods   
+# **2. Literature Review of Methods**   
   
+We conducted a literature review to explore possible vectorization and classification methods to use. We looked at Doc2Vec, Word2Vec, and TF-IDF as ways to vecotrize the text corpus. It was decided to use Doc2Vec and TF-IDF initally. Doc2Vec works best to capture the meaning of words in context and TF-IDF works to capture the meaning of each indivual word. KNN and SVM were explored as text classification methods. KNN is the most widely used method so it was selected to be used intially. In future steps, SVM will be explored.  
+
+
+# **3. Learning Sample**  
+## Strategy  
+The goal of the learning sample was to create a training set where half of the documents related to Big Data and half did not. We used term-matching to find the subset of abstracts which contains the words big data/ big_data/big datum. We found 4,684 abstracts (over the 1,143,869 abstracts) contained the word big data. From both the set of abstracts containing the words big-data and those without the word big-data, we randomly sample the same number of abstracts to balance our learning sample. We draw 600 abstracts from each set and obtained a learning sample of 1,200 abstracts. Based on the definition of big data, we trained 12 experts to manually labelled abstracts on whether it is big data related or not. Then, we randomly assigned 100 distinct abstracts to each expert to match the 1,200 abstracts from our learning sample. To track any difference in the understanding definition of big data between experts, we randomly select 10 abstracts from each expert and assigned them to a different expert for labelling. Difference in labelling a same abstract from 2 experts allowed us to capture the difference between them in understanding the definition of big data.  
+
+##Results  
+
+![Term Matching](www/term_matching.PNG)  
+
+Amoung 1200 abstracts, 40% (487/1200) where effectively big data related. The term matching provide a precision to classify abstracts into big data and non big data by ((557+444)/1200 = 83.4%) Most of the error from the term-matching in labelling is to classify an abstract that is non big data related as big data based on the name (156/713) 21.8%  
+![Expert Check](www/expert_check.PNG)  
+There was no high difference in labelling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data.
   
-# 3. TF-IDF and Doc2Vec  
-####TF-IDF  
+# **4. Text Vectorization**  
+
+##TF-IDF  
 Term Frequency-Inverse Document Frequency is a vectorization method that represents a document as a set of vectorized words.  
 
-####Doc2Vec  
+##Doc2Vec  
 Doc2Vec is another method to vectorize a document, which takes into account the semantics of the words as they appear in the abstracts. For each document/abstract, Doc2Vec creates a matrix of the words in the document as well as a paragraph ID allowing for the document to be processed as a whole as opposed to the individual words, which Word2Vec does,
   
-# 4. KNN
 
+# **5. Supervised Learning: KNN**  
+
+##Method  
+
+![Supervised vs Unsupervised](www/supervised.PNG)
+We used a supervised learning approach to label abstracts as big data related or not. Compared to an unsupervised method, this approach allows us to identify abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. 
+![KNN](www/KNN.PNG)  
+The method works by looking at the vecotrization of each abstract and classifying it into a class based on it's nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.  
+
+##Application  
+
+We randomly split our learning sample into a training sample (80%) and test sample (20%). The training is used to feed the KNN classifier and extract the keys features from the prediction. The test sample is used to evaluate the model performance. The trained model was then applied to the abstracts throughout the entire corpus.  
+
+# **6. Trends in R&D**  
   
+  Put them here once we have some.  
   
-# 5. Training Data Set    
-The KNN model requires a labelled training set. The goal is to build a balanced sample of abstracts related to big data and not big data.
-<br> 
-<br> 
-We first identified abstracts that are likely related to big data by using term-matching to find the subset of abstract that contains the words big-data/big_data/big datum. 4684 abstracts (of the 1143869 abstracts) contained one or more of these words. We randomly drew 600 abstracts from this set that included big data and drew 600 abstracts that did not include these key words. 
-<br> 
-<br> 
-Using our three definitions of big data, we trained 12 experts to differentiate big data and non big data abstracts. Each expert was randomly assigned 100 abstracts. To capture potential biases between experts in their understanding of the big data definition during the training (meaning that different expert may have understood differently the definition and provide different labelling of abstracts) we ran the following additional experiment. From the sample of 100 abstracts assigned to each expert, we randomly drew 10 abstracts and randomly assigned that to another expert. Thus, among the 1200 abstracts, 60 of them would be labelled by 2 experts so that we could compare their labelling. 
-<br> 
-<br> 
-![Accuracy](www/2ExpertAccuracy.png){width=60% }</center>  
-<br> 
-<br> 
-Overall, 21.6% [(8+11)/(8+11+47+22)] of the abstracts were classified differently by experts, traducing a precision of 78.4 %. The error of assigning a non big data related abstract to big data is larger than the error of assigning a big data related abstract to non big data. For example, taking expert 1 as ground true, the error of expert 2 assigning a non big data abstract as big data is 26% [8/(22+8)]. However, the error of assigning a big data related abstracts as non-big data is 19% [11/(47+11)]. To conclude, experts, for the most part, have a similar understanding of the definition of big data. 
-  
-# 6. Full Classification Model
+# **7. Future Steps**  
+In the future, it would be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thouroughly trained.
