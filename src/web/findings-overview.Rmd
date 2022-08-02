@@ -2,8 +2,11 @@
 title: "Findings Overview"
 
 ---
+Through vectorizing the abstracts in our corpus and using a classificaiton method, we were able to identify XXXX abstracts related to the sub- theme of big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends. 
 #Text Vectorizaiton  
 #Text Classificaiton  
+#Trends  
+
 
 
 

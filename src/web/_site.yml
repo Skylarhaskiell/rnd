@@ -8,7 +8,7 @@ output:
     toc_float: true
     css: style.css
 navbar:
-  title: "R&D Text Corpora Filtering and Data Mining:Case Study on Digitalization"
+  title: "R&D Emerging Digitalization Trends"
   left:
     - text: "Overview"
       href: index.html
@@ -24,6 +24,8 @@ navbar:
           href: qualitative-analysis.html
         - text: Text Classification
           href: nlp.html
+        - text: Trends
+          href: trends.html
     - text: "Team"
       href: team.html
     - text: ""
