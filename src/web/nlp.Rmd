@@ -3,4 +3,15 @@ title: "Text Classifcation"
 output: html_document
 ---
 #KNN on TF-IDF  
+582,530 abstracts were identified as big data when using TF-IDF to vecotrize the abstracts and KNN as a classifier. 
+```{r}
+library(DT)
+datatable(read.csv("/home/seh6fy/git/rnd/src/web/short_tf.csv")) 
+```
+
 #KNN on Doc2Vec  
+484362 abstracts were idenified as relating to big data by using Doc2Vec to classify the documents and KNN to classify them. 
+```{r}
+library(DT)
+datatable(read.csv("/home/seh6fy/git/rnd/src/web/short_doc.csv")) 
+```

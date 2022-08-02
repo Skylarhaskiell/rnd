@@ -20,8 +20,6 @@ navbar:
       menu:
         - text: Overview
           href: findings-overview.html
-        - text: Text Vectorization
-          href: qualitative-analysis.html
         - text: Text Classification
           href: nlp.html
         - text: Trends

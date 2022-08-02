@@ -4,7 +4,11 @@ title: "Findings Overview"
 ---
 Through vectorizing the abstracts in our corpus and using a classificaiton method, we were able to identify XXXX abstracts related to the sub- theme of big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends. 
 #Text Vectorizaiton  
+![tfidf](www.tfidf.PNG)  
+![doc2vec](www.doc2vec.PNG)  
+
 #Text Classificaiton  
+582,530 abstracts were identified using TF-IDF to vecotrize the text and KNN to classify it. 484,362 abstracts were identified t
 #Trends  
 
 
