@@ -38,7 +38,7 @@ We use Federal RePORTER, a publicly available database of federally funded R&D g
 * We identified all of the abstracts from Federal RePORTER that are big-data related by building a text classifier using a learning sample of abstracts. The text classifier is used to predict if abstracts from Federal RePORTER are big data related or not.
 * We sub setting all the abstracts that is big-data related and apply topics model on that to identify the main research funding area on big data (topics) and their trends.
 
-####Sources
+##**Sources**
 Boroush M; National Center for Science and Engineering Statistics (NCSES). 2021. U.S. R&D Increased by \$51 Billion in 2018, to \$606 Billion; Estimate for 2019 Indicates a Further Rise to $656 Billion. NSF 21-324. Alexandria, VA: National Science Foundation. Available at https://ncses.nsf.gov/pubs/nsf21324/.
 
 OECD (2015), Frascati Manual 2015: Guidelines for Collecting and Reporting Data on Research and Experimental Development.

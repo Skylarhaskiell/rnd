@@ -62,7 +62,8 @@ The learning sample was randomly spit into a training sample (80%) and test samp
 
 ### 5.2 Evaluation
 
-A confusion matrix can evaluate the performance of classification arguments. A true positive (TP) represents the number of properly classified abstracts as big data. A true negative (TN) represents the number of correctly classified abstracts that are not related to big data. A false positive (FP) represents the number of misclassified documents as being big data that are actually not related to big data. Finally, a false negative (FN) represents the number of abstracts misclassified as not being related to big data when it is about big data. <br>
+A confusion matrix can evaluate the performance of classification arguments. A true positive (TP) represents the number of properly classified abstracts as big data. A true negative (TN) represents the number of correctly classified abstracts that are not related to big data. A false positive (FP) represents the number of misclassified documents as being big data that are actually not related to big data. Finally, a false negative (FN) represents the number of abstracts misclassified as not being related to big data when it is about big data.  
+
 ![Graphic Source: https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html](www/evaluation.png){width=60% } 
 
 <br> We can use these metrics to calculate the accuracy, precision, recall, and F1 score, whose calculations are shown in the graphic below.
