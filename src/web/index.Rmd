@@ -5,16 +5,20 @@ output:
     includes:
       in_header: hero-image.html
 ---
+<font size="3">
 
+##**Project Background**  
+Research and development (R&D) is defined by the Organisation for Economic Co-operation and Development (OECD, 2015) as "creative and systematic work undertaken in order to increase the stock of knowledge – including knowledge of humankind, culture and society – and to devise new applications of available knowledge." R&D is critical to a country’s development. In the United States (U.S.), R&D spending increased yearly from 2010 to 2017, averaging \$21 billion annually. In 2018 and 2019, there were even greater increases in R&D spending from the previous years, coming out to around \$50 billion addition expenditures. In addition, the ratio of national R&D spending to national gross domestic product (GDP), a common metric of a nation’s R&D effort, has steadily risen in the U.S. since the mid-1990’s. Currently, nearly 21% of all U.S. R&D funding is provided by the federal government (National Center for Science and Engineering Statistics [NCSES], 2021); however, there is little data indicating the specific R&D areas that this funding supports.
 
-#**Project Background**  
-Research and development (R&D) is defined by the Organisation for Economic Co-operation and Development (OECD, 2015) as “creative and systematic work undertaken in order to increase the stock of knowledge – including knowledge of humankind, culture and society – and to devise new applications of available knowledge”. R&D is critical to a country’s development. In the United States (U.S.), R&D spending increased yearly from 2010 to 2017, averaging $21 billion annually. In 2018 and 2019, there were even greater increases in R&D spending from the previous years, coming out to around $50 billion addition expenditures. In addition, the ratio of national R&D spending to national gross domestic product (GDP), a common metric of a nation’s R&D effort, has steadily risen in the U.S. since the mid-1990’s. Currently, nearly 21% of all U.S. R&D funding is provided by the federal government (National Center for Science and Engineering Statistics [NCSES], 2021b); however, there is little data indicating the specific R&D areas that this funding supports.
-
-# **Research Question**
+## **Research Question**
 How can we characterize the R&D digitalization research area that the funding supported? What are trends in the digitalization research area?  
 
-## Other Areas of Interest  
-How can we determine which abstracts relate to a particular sub-theme? What are the trends in the sub-theme of big data?  
+### Other Areas of Interest  
+How can we determine which abstracts relate to a particular sub-theme? What are the trends in the sub-theme of big data?
+<br>
+<br>
+INSERT BIG DATA DESCRIPTION AND IMAGE
+
 
 
 <p align="center">    
@@ -22,27 +26,28 @@ How can we determine which abstracts relate to a particular sub-theme? What are 
 ![NSF](www/nsf.png)  
 </p>  
 
-#**Sponsor**  
+##**Sponsor**  
 This project is sponsored by the National Center for Science and Engineering Statistics (NCSES), a principal staistical agency located within the National Science Foundation. The project stakeholders from NCSES are John Jankowski, Senior Economic Advisor, and Audrey Kindlon, Survey Statistician.
 
 
-#**Data**  
-We use Federal RePORTER, a recently retired publicly available database of federally funded
-R&D grants, to characterize the R&D research areas that the funding supported. This database was designed to be “a repository of data and tools” that “promote[d] transparency and engage[d] the public, the research community, and agencies to describe federal science research investments and provide empirical data for science policy” (U.S. Department of Health and Human Services [HHS], 2020, March 6-a, 2020, March 6-b).
-
-Federal RePORTER contained project abstracts and related metadata for more than 1 million
-federally funded grants from science and technology federal agencies beginning in fiscal year (FY) 2000; however large scale reporting began in FY 2008. Project metadata included the title, funding agency, FY, and other information such as the principal investigator, organization, start date, and FY total cost. Historically, all of the project data was submitted to Federal RePORTER by the individual agencies themselves; however, this was recently changed and Federal RePORTER downloaded some agency data directly from Research.gov
-  
+##**Data**  
+We use Federal RePORTER, a publicly available database of federally funded R&D grant, to characterize the R&D research areas that the funding supported. This database was designed to be “a repository of data and tools” that “promote[d] transparency and engage[d] the public, the research community, and agencies to describe federal science research investments and provide empirical data for science policy” (U.S. Department of Health and Human Services, 2020). Federal RePORTER contains project abstracts and related metadata for more than 1 million federally funded grants from science and technology federal agencies beginning in fiscal year 2000 and large scale reporting began in FY 2008.
   
 
-# **Method**  
-##Literature Review   
+## **Method**  
+###Literature Review   
 We conducted a literature review to define digitalizaiton and sub-themes of big data. These definitions were used to create our training set for our supervised learning methods. We also explored different learning models that could be used to determine which abstracts pertain to certain themes.  
 
 
-##Text Vectorization  
+###Text Vectorization  
 We used TF-IDF and Doc2Vec models to transform our corpus of abstracts into vector representations of each document. The vector representation allowed the corpus to be transformed into a format upon which text classificaiton methods could be run.   
 
 
-##Text Classifiers  
+###Text Classifiers  
 The vectorized words were inputed into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data. From the classifier, 582,530 documents were determined to be related to the subtheme of big data uding TF-IDF and 484,362 were identified using Doc2vec. 259,701 of these documents repeated between both vectorization methods.  
+
+
+#####Sources - to be done!
+OECD
+(National Center for Science and Engineering Statistics [NCSES], 2021)
+(U.S. Department of Health and Human Services, 2020)

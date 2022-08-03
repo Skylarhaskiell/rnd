@@ -1,15 +1,17 @@
 ---
 title: "Team"
 ---
+<font size="3">
 
-# Interns  
+## Interns  
 <br> 
 ![Skylar Haskiell](www/skylar_pic.jpg){width=40% }</center>  
 
 
-## *Skylar Haskiell*
+### *Skylar Haskiell*
 Data Science for the Public Good Intern
-<!-- Skylar is a rising third year at the University of Virginia pursuing a B.S. in Computer Science.   -->  
+<br> 
+Skylar is a rising third year at the University of Virginia pursuing a B.S. in Computer Science.
 
 <br>   
 
@@ -17,21 +19,22 @@ Data Science for the Public Good Intern
 
 ![Kristian Olsson](www/kristian.jpeg){width=40% }</center>  
 
-## *Kristian Olsson*  
+### *Kristian Olsson*  
 Data Science for the Public Good Intern
-<!-- Kristian is a rising third year at the University of Virginia pursuing a B.A. in Mathematics and B.A in Statistics.   -->    
+<br> 
+Kristian is a rising third year at the University of Virginia pursuing a B.A. in Mathematics and B.A in Statistics.    
 <br>   
 
 <br> 
   
-# Research Scientists  
+## Research Scientists  
 <br> 
 
 ![Kathryn Linehan](www/kathryn.jpg){width=40% }</center>  
   
 
 
-## *Kathryn Linehan*  
+### *Kathryn Linehan*  
 Research Scientist  
 <!-- Kathryn Linehan is an applied mathematician who's research interests include numerical linear algebra, machine learning, natural language processing, and topic modeling. She earned a B.A. in Mathematics from Hood College, a M.S. in Applied Mathematics and Scientific Computation from the University of Maryland, College Park (UMD), and a Data Science Certificate from the Georgetown University School of Continuing Studies.  Kathryn is currently working towards finishing her Ph.D. from UMD.   -->
 <br>  
@@ -42,7 +45,7 @@ Research Scientist
  
 
 
-## *Stephanie Shipp*  
+### *Stephanie Shipp*  
 Deputy Division Director  
 <!-- Dr. Stephanie Shipp work spans topics related to the use of all data to advance policy, the science of data science, community analytics, and innovation. Dr. Shipp is a fellow of the American Association for the Advancement of Science, the American Statistical Association, and an elected member of the International Statistics Institute. She was a member of the international advisory board for Verket För Innovations system (VINNOVA), Sweden’s innovation agency and twice led an expert panel to evaluate the Swedish Research Council’s Linnaeus Grants. Dr. Shipp is a committee member on National Academies studies, primarily with the Board on Science, Technology, and Economic Policy, most recently evaluating the Department of Energy’s ARPA-E programs and Small Business Innovation Research program. She has a Ph.D. in economics from George Washington University.   -->
 <br>  
@@ -53,7 +56,7 @@ Deputy Division Director
   
 
 
-## *Leonel Siwe*  
+### *Leonel Siwe*  
 Postdoctoral Research Associate  
 <!-- Dr. Leonel Siwe  -->
 <br>   
@@ -63,6 +66,6 @@ Postdoctoral Research Associate
 ![Joel Thurston](www/joelthurston.png){width=40% }</center>  
  
 
-## *Joel Thurston*  
+### *Joel Thurston*  
 Senior Scientist 
 
