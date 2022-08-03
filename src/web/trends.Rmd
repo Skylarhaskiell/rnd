@@ -8,10 +8,13 @@ When Latent Dirichlet Allocation (LDA) was run on the corpus of documents identi
 
 ##TFIDF  
 ![TFIDF LDA](www/tfidf_model.PNG)    
-In the graph above, terms such as datum, method, and system in p7 show that this topic most likely represent big data. The n value shows that 395,936 abstracts fell into this topic between the years of 2008 and 2020.
+In the graph above, areas of research that use big data can be seen. Terms such as datum, method, and system in p7 show that this topic represents new work in data science methods. The n value shows that 395,936 abstracts fell into this topic between the years of 2008 and 2020. 
 
 ##Doc2Vec  
 ![Doc2Vec LDA](www/doc2vec_model.PNG)  
-Terms such as datum, model, and system idenify p9 above as a topic that most likely relates to big data. 301,601 documents were selected as a part of this topic group as can be seen by the n value above. 
+Terms such as datum, model, and system idenify p9 above as a topic that most likely relates new methods in big data. 347,219 documents were selected as a part of this topic group as can be seen by the n value above. 
+
+##Model Comparission  
+Looking at both of the models above, there are many topic groups in health science that utilize big data techniques to conduct their research. There are is also a clear topic that appears that represents abstracts in the corpus that relate directly to big data methods. 
 
 
