@@ -377,6 +377,7 @@ div.tocify {
 </div>
 
 
+<p><font size="3"></p>
 <div id="definition-of-digitialization" class="section level1">
 <h1><strong>1. Definition of Digitialization</strong></h1>
 <div id="initial-definition" class="section level2">
@@ -385,24 +386,30 @@ div.tocify {
 </div>
 <div id="finalized-definition" class="section level2">
 <h2>Finalized Definition</h2>
-<p>All of the literature sources were from the OECD and most from the G20 summit so the definitions were very similar. Becasue of this, a broader range of sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) was explored to create a more precise definition: &quot;Digitalization is the innovative adoption of emerging technologies to transform analog data into digital language, which, in turn promotes social, economic, and cultural progress.&quot; The key difference in this definition is that digitalization is focused on the adoption of these technologies rather than the conversion of analogue data to digital data (digitazation) and applying it to the world/businesses (digital transformation).</p>
+<p>All of the literature sources were from the OECD and most from the G20 summit so the definitions were very similar. Becasue of this, a broader range of sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) was explored to create a more precise definition: <br></p>
+<blockquote>
+<p>&quot;Digitalization is the innovative adoption of emerging technologies to transform analog data into digital language, which, in turn promotes social, economic, and cultural progress.&quot;</p>
+</blockquote>
+<p>The key difference in this definition is that digitalization is focused on the adoption of these technologies rather than the conversion of analogue data to digital data (digitazation) and applying it to the world/businesses (digital transformation).</p>
 </div>
 <div id="expanded-definition" class="section level2">
 <h2>Expanded Definition</h2>
 <p>The definiton of digitialization was still incredibly broad and could encapsulate most of the technological change in the past couple of centuries, so after speaking with the project's stakeholders, it was decided to focus more closely on the theme of Big Data. A definition for this subtheme was developed by looking at dictionaries and academic sources such as the OECD. Three different definitons were used:</p>
-<div id="oxford-languages-google-definition" class="section level3">
-<h3>Oxford Languages (Google) Definition:</h3>
+<ul>
+<li><h4 id="oxford-languages-google-definition">Oxford Languages (Google) Definition:</h4>
+<blockquote>
 <p>“extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.”</p>
-</div>
-<div id="gartner-definition" class="section level3">
-<h3>Gartner Definition:</h3>
+</blockquote></li>
+<li><h4 id="gartner-definition">Gartner Definition:</h4>
+<blockquote>
 <p>“‘Big data’ is high-volume, -velocity and -variety information assets that demand cost-effective, innovative forms of information processing for enhanced insight and decision making.”</p>
-</div>
-<div id="unctad-2019-digital-economy-report-definition" class="section level3">
-<h3>UNCTAD 2019 Digital Economy Report Definition:</h3>
+</blockquote></li>
+<li><h4 id="unctad-2019-digital-economy-report-definition">UNCTAD 2019 Digital Economy Report Definition:</h4>
+<blockquote>
 <p>“The term ‘big data’ has been popularized to denote the broader range of data that are increasingly available to individuals, firms and societies. The ‘big’ in big data can be defined along a number of axes: in terms of the growing volume of data available (e.g. from online transactions, sensors, devices); the wider variety of data that might be interpreted and combined with other data (e.g. unstructured data such as video and internet logs); and velocity, where data is generated very rapidly, and sometimes requires realtime interpretation (Laney, 2001).”</p>
+</blockquote></li>
+</ul>
 <p><br></p>
-</div>
 </div>
 </div>
 <div id="literature-review-of-methods" class="section level1">
@@ -425,42 +432,46 @@ div.tocify {
 <img src="www/expert_check.PNG" alt="Expert Check" /></p>
 <p>There was no high difference in labelling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data.</p>
 </div>
-</div>
-<div id="text-vectorization" class="section level1">
-<h1><strong>4. Text Vectorization</strong></h1>
-<div id="tf-idf" class="section level2">
-<h2>TF-IDF</h2>
+<div id="text-vectorization" class="section level2">
+<h2><strong>4. Text Vectorization</strong></h2>
+<div id="tf-idf" class="section level3">
+<h3>TF-IDF</h3>
 <p>Term Frequency-Inverse Document Frequency is a vectorization method that represents a document as a set of vectorized words.</p>
 </div>
-<div id="doc2vec" class="section level2">
-<h2>Doc2Vec</h2>
+<div id="doc2vec" class="section level3">
+<h3>Doc2Vec</h3>
 <p>Doc2Vec is another method to vectorize a document, which takes into account the semantics of the words as they appear in the abstracts. For each document/abstract, Doc2Vec creates a matrix of the words in the document as well as a paragraph ID allowing for the document to be processed as a whole as opposed to the individual words, which Word2Vec does,</p>
 </div>
 </div>
-<div id="supervised-learning-knn" class="section level1">
-<h1><strong>5. Supervised Learning: KNN</strong></h1>
-<div id="method" class="section level2">
-<h2>Method</h2>
+<div id="supervised-learning-knn" class="section level2">
+<h2><strong>5. Supervised Learning: KNN</strong></h2>
+<div id="method" class="section level3">
+<h3>Method</h3>
 <div class="figure">
 <img src="www/supervised.PNG" alt="Supervised vs Unsupervised" style="width:60.0%" />
 <p class="caption">Supervised vs Unsupervised</p>
 </div>
-<p>A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <img src="www/knn.PNG" alt="KNN" style="width:60.0%" /></p>
+<p>A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <br></p>
+<div class="figure">
+<img src="www/knn.PNG" alt="KNN" style="width:60.0%" />
+<p class="caption">KNN</p>
+</div>
 <p>The method works by looking at the vecotrization of each abstract and classifying it into a class based on it's nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.</p>
 </div>
-<div id="application" class="section level2">
-<h2>Application</h2>
+<div id="application" class="section level3">
+<h3>Application</h3>
 <p>The learning sample was randomly spit into a training sample (80%) and test sample (20%). The training is used to feed the KNN classifier and extract the keys features from the prediction. The test sample is used to evaluate the model performance. The trained model was then applied to the abstracts throughout the entire corpus.</p>
 </div>
 </div>
-<div id="trends-in-rd" class="section level1">
-<h1><strong>6. Trends in R&amp;D</strong></h1>
+<div id="topic-modeling-of-trends-in-rd" class="section level2">
+<h2><strong>6. Topic Modeling of Trends in R&amp;D</strong></h2>
 <p>Latent Dirolechic Allocation (LDA) was run both sets of abstracts identified as big data. From this, 10 topics that commonly occured in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often.<br />
 Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified as big data. Through this, the departments with the most abstracts relating to big data were identified. It could also be explored which agencies contributed the most, but as expected most of them were from HSS.</p>
 </div>
-<div id="future-steps" class="section level1">
-<h1><strong>7. Future Steps</strong></h1>
+<div id="future-steps" class="section level2">
+<h2><strong>7. Future Steps</strong></h2>
 <p>In the future, it would be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thouroughly trained.</p>
+</div>
 </div>
 
 
