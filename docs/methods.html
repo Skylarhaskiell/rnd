@@ -381,19 +381,19 @@ div.tocify {
 <div id="definition-of-digitialization" class="section level1">
 <h1><strong>1. Definition of Digitialization</strong></h1>
 <div id="initial-definition" class="section level2">
-<h2>Initial Definition</h2>
+<h2>1.1 Initial Definition</h2>
 <p>Initally, Organisation for Economic Co-operation and Development (OECD) literature was reviewed to define digitalizaiton. The initial definition was &quot;Digitalization is the innovative application and adoption of emerging technologies and data that promote social, economic, and cultural progress.&quot; A list of key technologies consistently metioned as key to digitialiation was also created. These included: internet of things, artificial intelligence, 5G, distributive ledger technology, cloud computing, robotization, autonomous machines, big data, and cloud computing among many others.</p>
 </div>
 <div id="finalized-definition" class="section level2">
-<h2>Finalized Definition</h2>
+<h2>1.2 Finalized Definition</h2>
 <p>All of the literature sources were from the OECD and most from the G20 summit so the definitions were very similar. Becasue of this, a broader range of sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) was explored to create a more precise definition: <br></p>
 <blockquote>
 <p>&quot;Digitalization is the innovative adoption of emerging technologies to transform analog data into digital language, which, in turn promotes social, economic, and cultural progress.&quot;</p>
 </blockquote>
 <p>The key difference in this definition is that digitalization is focused on the adoption of these technologies rather than the conversion of analogue data to digital data (digitazation) and applying it to the world/businesses (digital transformation).</p>
 </div>
-<div id="expanded-definition" class="section level2">
-<h2>Expanded Definition</h2>
+<div id="narrowed-definition" class="section level2">
+<h2>1.3 Narrowed Definition</h2>
 <p>The definiton of digitialization was still incredibly broad and could encapsulate most of the technological change in the past couple of centuries, so after speaking with the project's stakeholders, it was decided to focus more closely on the theme of Big Data. A definition for this subtheme was developed by looking at dictionaries and academic sources such as the OECD. Three different definitons were used:</p>
 <ul>
 <li><h4 id="oxford-languages-google-definition">Oxford Languages (Google) Definition:</h4>
@@ -418,55 +418,48 @@ div.tocify {
 </div>
 <div id="learning-sample" class="section level1">
 <h1><strong>3. Learning Sample</strong></h1>
-<div id="strategy" class="section level2">
-<h2>Strategy</h2>
 <p>The goal of the learning sample was to create a training set where half of the documents related to Big Data and half did not. Term-matching was used to find the subset of abstracts which contains the words big data/ big_data/big datum. 4,684 abstracts were found (from the 1,143,869 abstracts) contained the word big data. From both the set of abstracts containing the words big-data and those without the word big-data, the same number of abstracts were sampled to balance the learning sample. 600 abstracts were drawn from each set and obtained a learning sample of 1,200 abstracts. Based on the definition of big data, 12 experts were trained to manually labelled abstracts on whether a given abstract is big data related or not. Then, 100 distinct abstracts were randomly assignedto each expert to match the 1,200 abstracts from our learning sample. To track any difference in the understanding definition of big data between experts, 10 abstracts were randomly select from each expert and assigned them to a different expert for labelling. Difference in labelling a same abstract from 2 experts allowed the difference between them in understanding the definition of big data to be captured.</p>
-</div>
-<div id="results" class="section level2">
-<h2>Results</h2>
-<div class="figure">
-<img src="www/term_matching.PNG" alt="Term Matching" />
-<p class="caption">Term Matching</p>
-</div>
-<p>Amoung 1200 abstracts, 40% (487/1200) were effectively big data related. The term matching provide a precision to classify abstracts into big data and non big data by ((557+444)/1200 = 83.4%) Most of the error from the term-matching in labelling is to classify an abstract that is non big data related as big data based on the name (156/713) 21.8%<br />
-<img src="www/expert_check.PNG" alt="Expert Check" /></p>
-<p>There was no high difference in labelling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data.</p>
-</div>
 <div id="text-vectorization" class="section level2">
 <h2><strong>4. Text Vectorization</strong></h2>
 <div id="tf-idf" class="section level3">
-<h3>TF-IDF</h3>
+<h3>4.1 TF-IDF</h3>
 <p>Term Frequency-Inverse Document Frequency is a vectorization method that represents a document as a set of vectorized words.</p>
 </div>
 <div id="doc2vec" class="section level3">
-<h3>Doc2Vec</h3>
+<h3>4.2 Doc2Vec</h3>
 <p>Doc2Vec is another method to vectorize a document, which takes into account the semantics of the words as they appear in the abstracts. For each document/abstract, Doc2Vec creates a matrix of the words in the document as well as a paragraph ID allowing for the document to be processed as a whole as opposed to the individual words, which Word2Vec does,</p>
 </div>
 </div>
 <div id="supervised-learning-knn" class="section level2">
 <h2><strong>5. Supervised Learning: KNN</strong></h2>
 <div id="method" class="section level3">
-<h3>Method</h3>
+<h3>5.1 Method</h3>
 <div class="figure">
-<img src="www/supervised.PNG" alt="Supervised vs Unsupervised" style="width:60.0%" />
-<p class="caption">Supervised vs Unsupervised</p>
+<img src="www/supervised.PNG" alt="Graphic Source: https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/" style="width:60.0%" />
+<p class="caption">Graphic Source: <a href="https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/" class="uri">https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/</a></p>
 </div>
 <p>A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <br></p>
 <div class="figure">
-<img src="www/knn.PNG" style="width:45.0%" />
-
+<img src="www/knn.PNG" alt="Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, &quot;Article Classification using Natural Language Processing and Machine Learning&quot;; https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5" style="width:45.0%" />
+<p class="caption">Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, &quot;Article Classification using Natural Language Processing and Machine Learning&quot;; <a href="https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5" class="uri">https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5</a></p>
 </div>
 <p>The method works by looking at the vecotrization of each abstract and classifying it into a class based on it's nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.</p>
-</div>
-<div id="application" class="section level3">
-<h3>Application</h3>
 <p>The learning sample was randomly spit into a training sample (80%) and test sample (20%). The training is used to feed the KNN classifier and extract the keys features from the prediction. The test sample is used to evaluate the model performance. The trained model was then applied to the abstracts throughout the entire corpus.</p>
+</div>
+<div id="evaluation" class="section level3">
+<h3>5.2 Evaluation</h3>
+<p>A confusion matrix can evaluate the performance of classification arguments. A true positive (TP) represents the number of properly classified abstracts as big data. A true negative (TN) represents the number of correctly classified abstracts that are not related to big data. A false positive (FP) represents the number of misclassified documents as being big data that are actually not related to big data. Finally, a false negative (FN) represents the number of abstracts misclassified as not being related to big data when it is about big data. <br> <img src="www/evaluation.png" alt="Graphic Source: https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html" style="width:60.0%" /></p>
+<p><br> We can use these metrics to calculate the accuracy, precision, recall, and F1 score, whose calculations are shown in the graphic below.</p>
+<div class="figure">
+<img src="www/metrics.png" alt="Graphic Source: https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/" style="width:45.0%" />
+<p class="caption">Graphic Source: <a href="https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/" class="uri">https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/</a></p>
+</div>
 </div>
 </div>
 <div id="topic-modeling-of-trends-in-rd" class="section level2">
 <h2><strong>6. Topic Modeling of Trends in R&amp;D</strong></h2>
-<p>Latent Dirolechic Allocation (LDA) was run both sets of abstracts identified as big data. From this, 10 topics that commonly occured in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often.<br />
-Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified as big data. Through this, the departments with the most abstracts relating to big data were identified. It could also be explored which agencies contributed the most, but as expected most of them were from HSS.</p>
+<p>Non-negative Matrix Factorization (NMF) was run both sets of abstracts identified as big data. From this, 10 topics that commonly occured in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often.<br />
+<br> Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified as big data. Through this, the departments with the most abstracts relating to big data were identified. It could also be explored which agencies contributed the most, but as expected most of them were from HSS.</p>
 </div>
 <div id="future-steps" class="section level2">
 <h2><strong>7. Future Steps</strong></h2>

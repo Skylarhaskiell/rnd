@@ -377,25 +377,39 @@ div.tocify {
 </div>
 
 
-<p><font size="3"> Through vectorizing the abstracts in our corpus and using a classificaiton method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends.</p>
-<div id="text-vectorizaiton" class="section level2">
-<h2>Text Vectorizaiton</h2>
-<p><img src="www/tfidf.PNG" alt="tfidf" style="width:40.0%" /> <img src="www/doc2vec.PNG" alt="doc2vec" style="width:40.0%" /></p>
-<p>Above are confusion matricies that were created from testing the labeled data on a trained KNN classifier. As can be seen by the matricies above, both vecotrization methods had a fairly large amount of false positives. This could be an explanation for the large number of abstracts that were identified as big data.</p>
+<p><font size="3"></p>
+<div id="training-set-results" class="section level2">
+<h2>1. Training Set Results</h2>
+<p>Amoung 1200 abstracts, 40% (487/1200) were effectively big data related. The term matching provide a precision to classify abstracts into big data and non big data by ((557+444)/1200 = 83.4%) Most of the error from the term-matching in labelling is to classify an abstract that is non big data related as big data based on the name (156/713) 21.8%.</p>
+<div class="figure">
+<img src="www/term_matching.PNG" style="width:75.0%" />
+
 </div>
-<div id="text-classificaiton" class="section level2">
-<h2>Text Classificaiton</h2>
-<p>582,530 abstracts were identified using TF-IDF to vecotrize the text and KNN to classify it. 484,362 abstracts were identified using Doc2Vec to vectorize the text with the KNN classifier as well. This abstract set most likely contains many false positives. The data set used is heavily biased towards health science abstracts, which increases the difficulty of building a classifier to identify abstracts not in this theme. Because the training set was approximately 50% big data and 50% not, it makes sense that the data would also be identified roughly 50% big data and 50% not when using nearest neighbors to classify.</p>
+<p>There was significant no high difference in labelling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data. <br></p>
+<div class="figure">
+<img src="www/expert_check.PNG" style="width:75.0%" />
+
+</div>
+</div>
+<div id="knn-performance-on-test-set" class="section level2">
+<h2>2. KNN Performance on Test Set</h2>
+<p>Below are confusion matricies that were created from testing the labeled data on a trained KNN classifier. As can be seen by the matricies above, both vectorization methods had a fairly large amount of false positives. This could be an explanation for the large number of abstracts that were identified as big data.</p>
+<p><img src="www/tfidf.PNG" alt="tfidf" style="width:40.0%" /> <img src="www/doc2vec.PNG" alt="doc2vec" style="width:40.0%" /></p>
+</div>
+<div id="knn-on-full-corpus-big-data-corpus" class="section level2">
+<h2>3. KNN on Full Corpus : Big Data Corpus</h2>
+<p>582,530 abstracts were identified using TF-IDF to vectorize the text and KNN to classify it. 484,362 abstracts were identified using Doc2Vec to vectorize the text with the KNN classifier as well. This abstract set most likely contains many false positives. The data set used is heavily biased towards health science abstracts, which increases the difficulty of building a classifier to identify abstracts not in this theme. Because the training set was approximately 50% big data and 50% not, it makes sense that the data would also be identified roughly 50% big data and 50% not when using nearest neighbors to classify.<br />
+<br> Through vectorizing the abstracts in our corpus and using a classificaiton method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends.</p>
 </div>
 <div id="trends" class="section level2">
-<h2>Trends</h2>
+<h2>4. Trends</h2>
 <div class="figure">
-<img src="www/tfidf_model.PNG" alt="TFIDF LDA" />
-<p class="caption">TFIDF LDA</p>
+<img src="www/tfidf_model.PNG" />
+
 </div>
 <div class="figure">
-<img src="www/doc2vec_model.PNG" alt="Doc2Vec LDA" />
-<p class="caption">Doc2Vec LDA</p>
+<img src="www/doc2vec_model.PNG" />
+
 </div>
 </div>
 

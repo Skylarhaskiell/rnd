@@ -390,14 +390,17 @@ div.tocify {
 </div>
 <div id="research-question" class="section level2">
 <h2><strong>Research Question</strong></h2>
-<p>How can we characterize the R&amp;D digitalization research area that the funding supported? What are trends in the digitalization research area?</p>
-<div id="other-areas-of-interest" class="section level3">
-<h3>Other Areas of Interest</h3>
-<p>How can we determine which abstracts relate to a particular sub-theme? What are the trends in the sub-theme of big data? <br> <br> INSERT BIG DATA DESCRIPTION AND IMAGE</p>
+<ul>
+<li>How can we characterize the R&amp;D digitalization research area that the funding supported? What are trends in the digitalization research area?<br />
+</li>
+<li>Given the broadness of digitalization, how can we characterize the R&amp;D big data research area that the funding supported? What are trends in the sub-theme big data research area?<br />
+</li>
+<li>How can we determine which abstracts are related to big data?</li>
+</ul>
+<p><br> <br></p>
 <p align="center">
 <img src="www/nsf.png" alt="NSF" />
 </p>
-</div>
 </div>
 <div id="sponsor" class="section level2">
 <h2><strong>Sponsor</strong></h2>
@@ -407,23 +410,19 @@ div.tocify {
 <h2><strong>Data</strong></h2>
 <p>We use Federal RePORTER, a publicly available database of federally funded R&amp;D grant, to characterize the R&amp;D research areas that the funding supported. This database was designed to be “a repository of data and tools” that “promote[d] transparency and engage[d] the public, the research community, and agencies to describe federal science research investments and provide empirical data for science policy” (U.S. Department of Health and Human Services, 2020). Federal RePORTER contains project abstracts and related metadata for more than 1 million federally funded grants from science and technology federal agencies beginning in fiscal year 2000 and large scale reporting began in FY 2008.</p>
 </div>
-<div id="method" class="section level2">
-<h2><strong>Method</strong></h2>
-<div id="literature-review" class="section level3">
-<h3>Literature Review</h3>
-<p>We conducted a literature review to define digitalizaiton and sub-themes of big data. These definitions were used to create our training set for our supervised learning methods. We also explored different learning models that could be used to determine which abstracts pertain to certain themes.</p>
-</div>
-<div id="text-vectorization" class="section level3">
-<h3>Text Vectorization</h3>
-<p>We used TF-IDF and Doc2Vec models to transform our corpus of abstracts into vector representations of each document. The vector representation allowed the corpus to be transformed into a format upon which text classificaiton methods could be run.</p>
-</div>
-<div id="text-classifiers" class="section level3">
-<h3>Text Classifiers</h3>
-<p>The vectorized words were inputed into a KNN text classifier to determine which abstracts relate to digitalization and more specifically the sub theme of big data. From the classifier, 582,530 documents were determined to be related to the subtheme of big data uding TF-IDF and 484,362 were identified using Doc2vec. 259,701 of these documents repeated between both vectorization methods.</p>
-<div id="sources---to-be-done" class="section level5">
-<h5>Sources - to be done!</h5>
-<p>OECD (National Center for Science and Engineering Statistics [NCSES], 2021) (U.S. Department of Health and Human Services, 2020)</p>
-</div>
+<div id="process" class="section level2">
+<h2><strong>Process</strong></h2>
+<ul>
+<li>We conducted a literature review to define digitalizaiton and sub-themes of big data. These definitions were used to create our training set for our supervised learning methods. We also explored different learning models that could be used to determine which abstracts pertain to certain themes.<br />
+</li>
+<li>We indentified all of the abstracts from Federal RePORTER that are big-data related by building a text classifier using a learning sample of abstracts. The text classifier is used to predict if abstracts from Federal RePORTER are big data related or not.</li>
+<li>We sub setting all the abstracts that is big-data related and apply topics model on that to identify the main research funding aera on big data (topics) and their trends.</li>
+</ul>
+<div id="sources" class="section level4">
+<h4>Sources</h4>
+<p>Boroush M; National Center for Science and Engineering Statistics (NCSES). 2021. U.S. R&amp;D Increased by $51 Billion in 2018, to $606 Billion; Estimate for 2019 Indicates a Further Rise to $656 Billion. NSF 21-324. Alexandria, VA: National Science Foundation. Available at <a href="https://ncses.nsf.gov/pubs/nsf21324/" class="uri">https://ncses.nsf.gov/pubs/nsf21324/</a>. <a href="https://www.nsf.gov/statistics/randdef/manual.htm" class="uri">https://www.nsf.gov/statistics/randdef/manual.htm</a></p>
+<p>OECD (2015), Frascati Manual 2015: Guidelines for Collecting and Reporting Data on Research and Experimental Development.</p>
+<p>U.S. Department of Health and Human Services. (2020, March 6). STAR METRICS Federal Re- PORTER FAQS. Retrieved September 19, 2021 from <a href="https://federalreporter.nih.gov/Home/FAQ" class="uri">https://federalreporter.nih.gov/Home/FAQ</a>.</p>
 </div>
 </div>
 

@@ -3,23 +3,34 @@ title: "Findings Overview"
 
 ---
 <font size="3">
-Through vectorizing the abstracts in our corpus and using a classificaiton method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends.  
 
-##Text Vectorizaiton  
+## 1. Training Set Results
+
+Amoung 1200 abstracts, 40% (487/1200) were effectively big data related. The term matching provide a precision to classify abstracts into big data and non big data by ((557+444)/1200 = 83.4%) Most of the error from the term-matching in labelling is to classify an abstract that is non big data related as big data based on the name (156/713) 21.8%.
+
+![](www/term_matching.PNG){width=75% }
+
+There was significant no high difference in labelling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data. <br>
+
+![](www/expert_check.PNG){width=75% }
+
+## 2. KNN Performance on Test Set
+Below are confusion matricies that were created from testing the labeled data on a trained KNN classifier. As can be seen by the matricies above, both vectorization methods had a fairly large amount of false positives. This could be an explanation for the large number of abstracts that were identified as big data.  
+
 ![tfidf](www/tfidf.PNG){width=40% }
 ![doc2vec](www/doc2vec.PNG){width=40% }   
-  
-Above are confusion matricies that were created from testing the labeled data on a trained KNN classifier. As can be seen by the matricies above, both vecotrization methods had a fairly large amount of false positives. This could be an explanation for the large number of abstracts that were identified as big data.  
-
-##Text Classificaiton  
-582,530 abstracts were identified using TF-IDF to vecotrize the text and KNN to classify it. 484,362 abstracts were identified using Doc2Vec to vectorize the text with the KNN classifier as well. This abstract set most likely contains many false positives. The data set used is heavily biased towards health science abstracts, which increases the difficulty of building a classifier to identify abstracts not in this theme.  Because the training set was approximately 50% big data and 50% not, it makes sense that the data would also be identified roughly 50% big data and 50% not when using nearest neighbors to classify.  
 
 
-##Trends  
+## 3. KNN on Full Corpus : Big Data Corpus
+582,530 abstracts were identified using TF-IDF to vectorize the text and KNN to classify it. 484,362 abstracts were identified using Doc2Vec to vectorize the text with the KNN classifier as well. This abstract set most likely contains many false positives. The data set used is heavily biased towards health science abstracts, which increases the difficulty of building a classifier to identify abstracts not in this theme.  Because the training set was approximately 50% big data and 50% not, it makes sense that the data would also be identified roughly 50% big data and 50% not when using nearest neighbors to classify.  
+<br> 
+Through vectorizing the abstracts in our corpus and using a classificaiton method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends.  
 
-![TFIDF LDA](www/tfidf_model.PNG)   
+## 4. Trends  
 
-![Doc2Vec LDA](www/doc2vec_model.PNG)  
+![](www/tfidf_model.PNG)   
+
+![](www/doc2vec_model.PNG)  
 
 
 

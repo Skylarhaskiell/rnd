@@ -4,17 +4,17 @@ output: html_document
 ---
 <font size="3">
 
-When Latent Dirichlet Allocation (LDA) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.   
+When Non-negative Matrix Factorization (NMF) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.   
 
-##TFIDF  
-![TFIDF LDA](www/tfidf_model.PNG)    
+## 1. TFIDF  
+![TFIDF LDA](www/tfidf_stats.PNG)    
 In the graph above, areas of research that use big data can be seen. Terms such as datum, method, and system in p7 show that this topic represents new work in data science methods. The n value shows that 395,936 abstracts fell into this topic between the years of 2008 and 2020. 
 
-##Doc2Vec  
-![Doc2Vec LDA](www/doc2vec_model.PNG)  
+## 2. Doc2Vec  
+![Doc2Vec LDA](www/doc2vec_stats.PNG)  
 Terms such as datum, model, and system idenify p9 above as a topic that most likely relates new methods in big data. 347,219 documents were selected as a part of this topic group as can be seen by the n value above. 
 
-##Model Comparission  
+## 3. Model Comparission  
 Looking at both of the models above, there are many topic groups in health science that utilize big data techniques to conduct their research. There are is also a clear topic that appears that represents abstracts in the corpus that relate directly to big data methods. 
 
 
