@@ -10,7 +10,7 @@ Among 1200 abstracts, 40% (487/1200) were effectively big data related. The term
 
 ![](www/term_matching.PNG){width=75% }
 
-There was significant no high difference in labeling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data. <br>
+There was no high difference in labeling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data. <br>
 
 ![](www/expert_check.PNG){width=75% }
 
