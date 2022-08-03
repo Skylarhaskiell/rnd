@@ -422,8 +422,8 @@ div.tocify {
 <p class="caption">Term Matching</p>
 </div>
 <p>Amoung 1200 abstracts, 40% (487/1200) were effectively big data related. The term matching provide a precision to classify abstracts into big data and non big data by ((557+444)/1200 = 83.4%) Most of the error from the term-matching in labelling is to classify an abstract that is non big data related as big data based on the name (156/713) 21.8%<br />
-<img src="www/expert_check.PNG" alt="Expert Check" /><br />
-There was no high difference in labelling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data.</p>
+<img src="www/expert_check.PNG" alt="Expert Check" /></p>
+<p>There was no high difference in labelling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data.</p>
 </div>
 </div>
 <div id="text-vectorization" class="section level1">
@@ -441,9 +441,12 @@ There was no high difference in labelling between experts. In overall, 79.3% ((6
 <h1><strong>5. Supervised Learning: KNN</strong></h1>
 <div id="method" class="section level2">
 <h2>Method</h2>
-<p><img src="www/supervised.PNG" alt="Supervised vs Unsupervised" /><br />
-A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <img src="www/knn.PNG" alt="KNN" /><br />
-The method works by looking at the vecotrization of each abstract and classifying it into a class based on it's nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.</p>
+<div class="figure">
+<img src="www/supervised.PNG" alt="Supervised vs Unsupervised" style="width:60.0%" />
+<p class="caption">Supervised vs Unsupervised</p>
+</div>
+<p>A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <img src="www/knn.PNG" alt="KNN" style="width:60.0%" /></p>
+<p>The method works by looking at the vecotrization of each abstract and classifying it into a class based on it's nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.</p>
 </div>
 <div id="application" class="section level2">
 <h2>Application</h2>
@@ -452,7 +455,8 @@ The method works by looking at the vecotrization of each abstract and classifyin
 </div>
 <div id="trends-in-rd" class="section level1">
 <h1><strong>6. Trends in R&amp;D</strong></h1>
-<p>Put them here once we have some.</p>
+<p>Latent Dirolechic Allocation (LDA) was run both sets of abstracts identified as big data. From this, 10 topics that commonly occured in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often.<br />
+Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified as big data. Through this, the departments with the most abstracts relating to big data were identified. It could also be explored which agencies contributed the most, but as expected most of them were from HSS.</p>
 </div>
 <div id="future-steps" class="section level1">
 <h1><strong>7. Future Steps</strong></h1>
