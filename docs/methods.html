@@ -458,8 +458,10 @@ div.tocify {
 </div>
 <div id="topic-modeling-of-trends-in-rd" class="section level2">
 <h2><strong>6. Topic Modeling of Trends in R&amp;D</strong></h2>
-<p>Non-negative Matrix Factorization (NMF) was run both sets of abstracts identified as big data. From this, 10 topics that commonly occured in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often.<br />
-<br> Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified as big data. Through this, the departments with the most abstracts relating to big data were identified. It could also be explored which agencies contributed the most, but as expected most of them were from HSS.</p>
+<p><img src="www/topic_model.PNG" /><br />
+For topic modeling, Non-Negative Matrix Factorization (NMF) was used. NMF is an approximate matrix decomposition that in the context of topic modeling,finds the document-topic and topic-term weights through iterative optimization (D. D. Lee &amp; Seung, 1999). The input to NMF includes term frequency-inverse document frequency (TFIDF) weights by document.</p>
+<p>NMF was run both sets of abstracts identified as big data. From this, 10,20, and 30 topics that commonly occured in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often. The resultant topics from the topic models were analyzed by examining their weights over time. This allowed the relative prevalence of each topic in the corpus of big data related abstracts over time to be roughly characterized.</p>
+<p>The document-topic distribution was used to obtain the topic weights for each abstract. Then, for each year the means of the weights of the topics are calculated for the project abstracts that have the given start year. The relationship between mean weight and year for each topic was modeled using linear regression, thus capturing the trend of the topic weights over time. <br> Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified as big data. Through this, the departments with the most abstracts relating to big data were identified. It could also be explored which agencies contributed the most, but as expected most of them were from HSS.</p>
 </div>
 <div id="future-steps" class="section level2">
 <h2><strong>7. Future Steps</strong></h2>

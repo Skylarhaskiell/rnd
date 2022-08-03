@@ -28,9 +28,19 @@ Through vectorizing the abstracts in our corpus and using a classificaiton metho
 
 ## 4. Trends  
 
+### 4.1 NMF with 10 Topics  
+
 ![](www/tfidf_model.PNG)   
 
-![](www/doc2vec_model.PNG)  
+![](www/doc2vec_model.PNG)   
+
+### 4.2 NMF with 20 Topics   
+![](www/tfidf_model20.png)  
+    
+    
+### 4.3 NMF with 30 Topics   
+![](www/tfidf_model30.PNG)
+
 
 
 
