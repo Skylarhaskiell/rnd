@@ -5,18 +5,18 @@ title: "Methods"
 
 # **1. Definition of Digitialization**  
 ## 1.1 Initial Definition  
-Initally, Organisation for Economic Co-operation and Development (OECD) literature was reviewed to define digitalizaiton. The initial definition was "Digitalization is the innovative application and adoption of emerging technologies and data that promote social, economic, and cultural progress." A list of key technologies consistently metioned as key to digitialiation was also created. These included: internet of things, artificial intelligence, 5G, distributive ledger technology, cloud computing,  robotization, autonomous machines, big data, and cloud computing among many others.   
+Initially, Organisation for Economic Co-operation and Development (OECD) literature was reviewed to define digitalizaiton. The initial definition was "Digitalization is the innovative application and adoption of emerging technologies and data that promote social, economic, and cultural progress." A list of key technologies consistently mentioned as key to digitalization was also created. These included: internet of things, artificial intelligence, 5G, distributive ledger technology, cloud computing,  robotization, autonomous machines, big data, and cloud computing among many others.   
 
 ## 1.2 Finalized Definition  
-All of the literature sources were from the OECD and most from the G20 summit so the definitions were very similar. Becasue of this, a broader range of sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) was explored to create a more precise definition: <br>
+All of the literature sources were from the OECD and most from the G20 summit so the definitions were very similar. Because of this, a broader range of sources (National Academy of Science, Engineering, and Medicine, Google Scholar, UVA Virgo, Urban Institute, Brookings, etc.) was explored to create a more precise definition: <br>
 
 > "Digitalization is the innovative adoption of emerging technologies to transform analog data into digital language, which, in turn promotes social, economic, and cultural progress."
 
-The key difference in this definition is that digitalization is focused on the adoption of these technologies rather than the conversion of analogue data to digital data (digitazation) and applying it to the world/businesses (digital transformation).  
+The key difference in this definition is that digitalization is focused on the adoption of these technologies rather than the conversion of analogue data to digital data (digitalization) and applying it to the world/businesses (digital transformation).  
 
 
 ## 1.3 Narrowed Definition  
-The definiton of digitialization was still incredibly broad and could encapsulate most of the technological change in the past couple of centuries, so after speaking with the project's stakeholders, it was decided to focus more closely on the theme of Big Data. A definition for this subtheme was developed by looking at dictionaries and academic sources such as the OECD. Three different definitons were used:
+The definition of digitialization was still incredibly broad and could encapsulate most of the technological change in the past couple of centuries, so after speaking with the project's stakeholders, it was decided to focus more closely on the theme of Big Data. A definition for this sub-theme was developed by looking at dictionaries and academic sources such as the OECD. Three different definitions were used:
 
 * ####Oxford Languages (Google) Definition: 
 > “extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.”
@@ -25,17 +25,17 @@ The definiton of digitialization was still incredibly broad and could encapsulat
 > “‘Big data’ is high-volume, -velocity and -variety information assets that demand cost-effective, innovative forms of information processing for enhanced insight and decision making.”
 
 * ####UNCTAD 2019 Digital Economy Report Definition: 
-> “The term ‘big data’ has been popularized to denote the broader range of data that are increasingly available to individuals, firms and societies. The ‘big’ in big data can be defined along a number of axes: in terms of the growing volume of data available (e.g. from online transactions, sensors, devices); the wider variety of data that might be interpreted and combined with other data (e.g. unstructured data such as video and internet logs); and velocity, where data is generated very rapidly, and sometimes requires realtime interpretation (Laney, 2001).”
+> “The term ‘big data’ has been popularized to denote the broader range of data that are increasingly available to individuals, firms and societies. The ‘big’ in big data can be defined along a number of axes: in terms of the growing volume of data available (e.g. from online transactions, sensors, devices); the wider variety of data that might be interpreted and combined with other data (e.g. unstructured data such as video and internet logs); and velocity, where data is generated very rapidly, and sometimes requires real-time interpretation (Laney, 2001).”
 
 <br> 
 
 # **2. Literature Review of Methods**   
   
-A literature review was conducted to explore possible vectorization and classification methods to use. We looked at Doc2Vec, Word2Vec, and TF-IDF as ways to vecotrize the text corpus. It was decided to use Doc2Vec and TF-IDF initally. Doc2Vec works best to capture the meaning of words in context and TF-IDF works to capture the meaning of each indivual word. KNN and SVM were explored as text classification methods. KNN is the most widely used method so it was selected to be used intially. In future steps, SVM will be explored.  
+A literature review was conducted to explore possible vectorization and classification methods to use. We looked at Doc2Vec, Word2Vec, and TF-IDF as ways to vecotrize the text corpus. It was decided to use Doc2Vec and TF-IDF initially. Doc2Vec works best to capture the meaning of words in context and TF-IDF works to capture the meaning of each individual word. KNN and SVM were explored as text classification methods. KNN is the most widely used method so it was selected to be used initially. In future steps, SVM will be explored.  
 
 
 # **3. Learning Sample**  
-The goal of the learning sample was to create a training set where half of the documents related to Big Data and half did not. Term-matching was used to find the subset of abstracts which contains the words big data/ big_data/big datum. 4,684 abstracts were found (from the 1,143,869 abstracts) contained the word big data. From both the set of abstracts containing the words big-data and those without the word big-data, the same number of abstracts were sampled to balance the learning sample. 600 abstracts were drawn from each set and obtained a learning sample of 1,200 abstracts. Based on the definition of big data, 12 experts were trained  to manually labelled abstracts on whether a given abstract is big data related or not. Then, 100 distinct abstracts were randomly assignedto each expert to match the 1,200 abstracts from our learning sample. To track any difference in the understanding definition of big data between experts,  10 abstracts were randomly select from each expert and assigned them to a different expert for labelling. Difference in labelling a same abstract from 2 experts allowed the difference between them in understanding the definition of big data to be captured.  
+The goal of the learning sample was to create a training set where half of the documents related to Big Data and half did not. Term-matching was used to find the subset of abstracts which contains the words big data/ big_data/big datum. 4,684 abstracts were found (from the 1,143,869 abstracts) contained the word big data. From both the set of abstracts containing the words big-data and those without the word big-data, the same number of abstracts were sampled to balance the learning sample. 600 abstracts were drawn from each set and obtained a learning sample of 1,200 abstracts. Based on the definition of big data, 12 experts were trained  to manually labelled abstracts on whether a given abstract is big data related or not. Then, 100 distinct abstracts were randomly assigned to each expert to match the 1,200 abstracts from our learning sample. To track any difference in the understanding definition of big data between experts,  10 abstracts were randomly select from each expert and assigned them to a different expert for labeling. Difference in labeling a same abstract from 2 experts allowed the difference between them in understanding the definition of big data to be captured.  
   
 ## **4. Text Vectorization**  
 
@@ -52,7 +52,7 @@ Doc2Vec is another method to vectorize a document, which takes into account the 
 
 ![Graphic Source: https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/](www/supervised.PNG){width=60% }  
 
-A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relavent while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <br> 
+A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relevant while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <br> 
 
 ![Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, "Article Classification using Natural Language Processing and Machine Learning"; https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5](www/knn.PNG){width=45% }  
 
@@ -75,7 +75,7 @@ A confusion matrix can evaluate the performance of classification arguments. A t
 ![](www/topic_model.PNG)  
 For topic modeling, Non-Negative Matrix Factorization (NMF) was used. NMF is an approximate matrix decomposition that in the context of topic modeling,finds the document-topic and topic-term weights through iterative optimization (D. D. Lee & Seung, 1999). The input to NMF includes term frequency-inverse document frequency (TFIDF) weights by document.  
 
-NMF was run both sets of abstracts identified as big data. From this, 10,20, and 30 topics that commonly occured in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often. The resultant topics from the topic models were analyzed by examining their weights over time. This allowed the relative prevalence of each topic in the corpus of big data related abstracts over time to be roughly characterized.  
+NMF was run both sets of abstracts identified as big data. From this, 10,20, and 30 topics that commonly occurred in the sets were identified. The topics were composed of words that defined them to be unique and also appeared often. The resultant topics from the topic models were analyzed by examining their weights over time. This allowed the relative prevalence of each topic in the corpus of big data related abstracts over time to be roughly characterized.  
 
 The document-topic distribution was used to obtain the topic weights for each abstract. Then, for each year the means of the weights of the topics are calculated for the project abstracts that have the given start year. The relationship between mean weight and year for each topic was modeled using linear regression, thus capturing the trend of the topic weights over time. 
 <br>
@@ -83,4 +83,4 @@ Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified 
 
   
 ## **7. Future Steps**  
-In the future, it would be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thouroughly trained.
+In the future, it would be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thoroughly trained.

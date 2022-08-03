@@ -8,10 +8,10 @@ output:
 <font size="3">
 
 ##**Project Background**  
-Research and development (R&D) is commonly defined as work undertaken to increase knowledge and new applicaions of previous knowledge. R&D spending increased $21 billion annually between 2010 and 2017 in the United States. A common metric for measuring a nation's R&D is the ration of national R&D spending to national gross domestic product (GDP). In the U.S. this has been steadily rising since the mid-1990's. The federal government currently provides 21% of all U.S. R&D funding(National Center for Science and Engineering Statistics [NCSES], 2021). There is little data indicating the specific R&D areas that this funding supports.
+Research and development (R&D) is commonly defined as work undertaken to increase knowledge and new applications of previous knowledge. R&D spending increased $21 billion annually between 2010 and 2017 in the United States. A common metric for measuring a nation's R&D is the ration of national R&D spending to national gross domestic product (GDP). In the U.S. this has been steadily rising since the mid-1990's. The federal government currently provides 21% of all U.S. R&D funding (National Center for Science and Engineering Statistics [NCSES], 2021). There is little data indicating the specific R&D areas that this funding supports.
 
 ## **Research Question**
-* How can we characterize the R&D digitalization research area that the funding supported? What are trends in the digitalization research area?  
+* How can we characterize the R&D digitization research area that the funding supported? What are trends in the digitalization research area?  
 * Given the broadness of digitalization, how can we characterize the R&D big data research area that the funding supported? What are trends in the sub-theme big data research area?  
 * How can we determine which abstracts are related to big data?
 
@@ -26,7 +26,7 @@ Research and development (R&D) is commonly defined as work undertaken to increas
 </p>  
 
 ##**Sponsor**  
-This project is sponsored by the National Center for Science and Engineering Statistics (NCSES), a principal staistical agency located within the National Science Foundation. The project stakeholders from NCSES are John Jankowski, Senior Economic Advisor, and Audrey Kindlon, Survey Statistician.
+This project is sponsored by the National Center for Science and Engineering Statistics (NCSES), a principal statistical agency located within the National Science Foundation. The project stakeholders from NCSES are John Jankowski, Senior Economic Adviser, and Audrey Kindlon, Survey Statistician.
 
 
 ##**Data**  
@@ -35,8 +35,8 @@ We use Federal RePORTER, a publicly available database of federally funded R&D g
 
 ## **Process**  
 * We conducted a literature review to define digitalizaiton and sub-themes of big data. These definitions were used to create our training set for our supervised learning methods. We also explored different learning models that could be used to determine which abstracts pertain to certain themes.  
-* We indentified all of the abstracts from Federal RePORTER that are big-data related by building a text classifier using a learning sample of abstracts. The text classifier is used to predict if abstracts from Federal RePORTER are big data related or not.
-* We sub setting all the abstracts that is big-data related and apply topics model on that to identify the main research funding aera on big data (topics) and their trends.
+* We identified all of the abstracts from Federal RePORTER that are big-data related by building a text classifier using a learning sample of abstracts. The text classifier is used to predict if abstracts from Federal RePORTER are big data related or not.
+* We sub setting all the abstracts that is big-data related and apply topics model on that to identify the main research funding area on big data (topics) and their trends.
 
 ####Sources
 Boroush M; National Center for Science and Engineering Statistics (NCSES). 2021. U.S. R&D Increased by \$51 Billion in 2018, to \$606 Billion; Estimate for 2019 Indicates a Further Rise to $656 Billion. NSF 21-324. Alexandria, VA: National Science Foundation. Available at https://ncses.nsf.gov/pubs/nsf21324/.
