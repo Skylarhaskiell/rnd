@@ -385,14 +385,24 @@ div.tocify {
 <h2>Federal RePORTER Database</h2>
 <p>Federal RePORTER, a recently retired federally funded research and development grant database, contained a vast amount of information on federally funded R&amp;D and was utilized by researchers and policymakers to uncover insights. Federal RePORTER data consisted of more than 1 million federally funded R&amp;D grants from science and technology federal agencies beginning in 2000. Project information included title, funding department, funding agency, principal investigator (PI), organization, start date, and total cost. Federal RePORTER data were submitted by the individual agencies including HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA. <br> <br> Federal RePORTER was retired on March 1st, 2022, although archived data through fiscal year 2020 are available at <a href="https://federalreporter.nih.gov/" class="uri">https://federalreporter.nih.gov/</a>.</p>
 </div>
-<div id="abstract-wrangling" class="section level2">
-<h2>Abstract Wrangling</h2>
-<p><img src="www/reporter_stats.PNG" alt="Wrangling Statistics" /> In total, there were 1,156,137 projects in our raw dataset. We removed 42,380 projects with a null (missing) abstract from the dataset. We associated each project with the year given in the project start date. This allowed us to associate the topics assigned to a a project to a given year as well. By looking across topics assigned to all projects, we could then track topics over time. For topics missing a start date, we used the budget start date to assign a year. Otherwise, projects were assigned a year based on the FY in which they were assigned to the Federal RePORTER database.<br />
-We deduplicated projects that shared the same title, abstract, and start date. For example, multi-institutional projects with an entry in Federal RePORTER for each organization would be considered duplicate entries for the same project. There were 414,105 duplicate entries removed.</p>
+<div id="data-wrangling" class="section level2">
+<h2>Data Wrangling</h2>
+<p>Our raw dataset contained 1,262,655 projects from FYs 2008-2020. In order to prepare this data for analysis we</p>
+<ol style="list-style-type: decimal">
+<li><p>Removed projects that were missing an abstract (42,536 projects),</p></li>
+<li><p>Deduplicated projects by title, abstract, and FY, and then removed the repeated project entries (71,902 projects), and</p></li>
+<li><p>Removed abstracts that were short phrases such as “Abstract not provided”.</p></li>
+</ol>
+<p>Doc2Vec, a method we selected, utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. Our other vectorization method, TF-IDF, requires text processing to be effective.</p>
 </div>
 <div id="text-data-preparation" class="section level2">
 <h2>Text Data Preparation</h2>
-<p>For the purpose of our projects, it was choosen to not remove items such as common words (i.e. the, and, it) and non-alphabetic characters. Doc2Vec, a method we selected, takes these items into account to give documents as a whole meaning. Our other vectorization method, TF-IDF , removes terms that occur frequently while vectorizing and makes all words lowercase in this process as well.</p>
+<p>We processed the abstract text of each project by</p>
+<ol style="list-style-type: decimal">
+<li><p>Removing phrases such as “description (provided by applicant)”,</p></li>
+<li><p>Performing standard Natural Language Processing (NLP) methods, specifically tokenization, lemmatization, stop word removal, and addition of bi-grams and tri-grams, and</p></li>
+<li><p>Discarding length one tokens and numeric tokens except those of length four (years).</p></li>
+</ol>
 </div>
 
 

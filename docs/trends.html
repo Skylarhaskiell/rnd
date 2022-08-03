@@ -379,17 +379,20 @@ div.tocify {
 
 <p><font size="3"></p>
 <p>When Non-negative Matrix Factorization (NMF) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.</p>
-<div id="tfidf" class="section level2">
-<h2>1. TFIDF</h2>
+<div id="knn-classifier-with-tf-idf" class="section level2">
+<h2>1. KNN Classifier with TF-IDF</h2>
 <p><img src="www/tfidf_stats.PNG" alt="TFIDF LDA" /><br />
-The weighted average precision for TF-IDF was 0.63, as was did the weighted average recall. The precision means that 63% of the abstracts returned were relavent to big data. The recall means that 63% of the abstracts relating to big data were selected. Further refinements on the model such as changing the number of nearest neighbors could increase the precision and accuracy.</p>
-<p>In the graph above, areas of research that use big data can be seen. Terms such as datum, method, and system in p7 show that this topic represents new work in data science methods. The n value shows that 395,936 abstracts fell into this topic between the years of 2008 and 2020.</p>
+The weighted average precision for TF-IDF was 0.63, as was the weighted average recall. These metrics were calculated based on the manually labeled training set. The precision means that 63% of the abstracts were identified as big data were in fact relavent to big data. The recall means that 63% of the abstracts relating to big data were selected as big data by the classifier. Further refinements on the model such as changing the number of nearest neighbors could increase the precision and accuracy.</p>
+<p><img src="www/tfidf_model.PNG" /> In the graph above, areas of research that use big data can be seen. Terms such as datum, method, and system in p7 show that this topic represents new work in data science methods. The n value shows that 186,840 abstracts fell into this topic between the years of 2008 and 2020.</p>
 </div>
-<div id="doc2vec" class="section level2">
-<h2>2. Doc2Vec</h2>
-<p><img src="www/doc2vec_stats.PNG" alt="Doc2Vec LDA" /><br />
-The weighted average precision for Doc2Vec was 0.49 and the weighted average recall was 0.55. The precision means that 49% of the abstracts returned were relavent to big data. The recall means that 55% of the abstracts relating to big data were selected.<br />
-<img src="www/doc2vec_model.PNG" /> Terms such as datum, model, and system idenify p9 above as a topic that most likely relates new methods in big data. 347,219 documents were selected as a part of this topic group as can be seen by the n value above.</p>
+<div id="knn-classifier-with-doc2vec" class="section level2">
+<h2>2. KNN Classifier with Doc2vec</h2>
+<div class="figure">
+<img src="www/doc2vec_stats.PNG" alt="Doc2Vec LDA" />
+<p class="caption">Doc2Vec LDA</p>
+</div>
+<p>The weighted average precision for Doc2vec was 0.49, a the weighted average recall w as 0.55. These metrics were calculated based on the manually labeled training set. The precision means that 49% of the abstracts were identified as big data were in fact relavent to big data. The recall means that 55% of the abstracts relating to big data were selected as big data by the classifier. Further refinements on the model such as changing the number of nearest neighbors could increase the precision and accuracy.</p>
+<p><img src="www/doc2vec_model.PNG" /> Terms such as datum, model, and system idenify p9 above as a topic that most likely relates new methods in big data. 347,219 documents were selected as a part of this topic group as can be seen by the n value above.</p>
 <!-- ## 3. Model Comparission   -->
 <!-- Looking at both of the models above, there are many topic groups in health science that utilize big data techniques to conduct their research. There are is also a clear topic that appears that represents abstracts in the corpus that relate directly to big data methods.  -->
 </div>

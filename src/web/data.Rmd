@@ -13,10 +13,23 @@ Federal RePORTER, a recently retired federally funded research and development g
 <br>
 Federal RePORTER was retired on March 1st, 2022, although archived data through fiscal year 2020 are available at https://federalreporter.nih.gov/.  
 
-## Abstract Wrangling  
-![Wrangling Statistics](www/reporter_stats.PNG)
-In total, there were 1,156,137 projects in our raw dataset. We removed 42,380 projects with a null (missing) abstract from the dataset. We associated each project with the year given in the project start date. This allowed us to associate the topics assigned to a a project to a given year as well. By looking across topics assigned to all projects, we could then track topics over time. For topics missing a start date, we used the budget start date to assign a year. Otherwise, projects were assigned a year based on the FY in which they were assigned to the Federal RePORTER database.  
-We deduplicated projects that shared the same title, abstract, and start date. For example, multi-institutional projects with an entry in Federal RePORTER for each organization would be considered duplicate entries for the same project. There were 414,105 duplicate entries removed.  
+## Data Wrangling  
+Our raw dataset contained 1,262,655 projects from FYs 2008-2020.  In order to prepare this data for analysis we  
+
+1.	Removed projects that were missing an abstract (42,536 projects),  
+
+2.	Deduplicated projects by title, abstract, and FY, and then removed the repeated project entries (71,902 projects), and  
+
+3.	Removed abstracts that were short phrases such as “Abstract not provided”.  
+
+Doc2Vec, a method we selected, utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. Our other vectorization method, TF-IDF, requires text processing to be effective.  
+ 
 
 ## Text Data Preparation  
-For the purpose of our projects, it was choosen to not remove items such as common  words (i.e. the, and, it) and non-alphabetic characters. Doc2Vec, a method we selected, takes these items into account to give documents as a whole meaning. Our other vectorization method, TF-IDF , removes terms that occur frequently while vectorizing and makes all words lowercase in this process as well. 
+We processed the abstract text of each project by   
+
+1.	Removing phrases such as “description (provided by applicant)”,   
+
+2.	Performing standard Natural Language Processing (NLP) methods, specifically tokenization, lemmatization, stop word removal, and addition of bi-grams and tri-grams, and  
+
+3.	Discarding length one tokens and numeric tokens except those of length four (years).
