@@ -3,26 +3,15 @@ title: "Trends in Big-Data Abstracts"
 output: html_document
 ---
 
-# ```{r setup, include=FALSE}
-# knitr::opts_chunk$set(echo = TRUE)
-# ```
-# 
-# ## R Markdown
-# 
-# This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-# 
-# When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-# 
-# ```{r cars}
-# summary(cars)
-# ```
-# 
-# ## Including Plots
-# 
-# You can also embed plots, for example:
-# 
-# ```{r pressure, echo=FALSE}
-# plot(pressure)
-# ```
-# 
-# Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+When Latent Dirichlet Allocation (LDA) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.   
+
+#TFIDF  
+![TFIDF LDA](www/tfidf_model.PNG)    
+In the graph above, terms such as datum, method, and system in p7 show that this topic most likely represent big data. The n value shows that 395,936 abstracts fell into this topic between the years of 2008 and 2020.
+
+#Doc2Vec  
+![Doc2Vec LDA](www/doc2vec_model.PNG)  
+Terms such as datum, model, and system idenify p9 above as a topic that most likely relates to big data. 301,601 documents were selected as a part of this topic group as can be seen by the n value above. 
+
+

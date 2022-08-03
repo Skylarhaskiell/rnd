@@ -377,12 +377,26 @@ div.tocify {
 </div>
 
 
-<p>Through vectorizing the abstracts in our corpus and using a classificaiton method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends. #Text Vectorizaiton<br />
-<img src="www.tfidf.PNG" alt="tfidf" /><br />
-<img src="www.doc2vec.PNG" alt="doc2vec" /></p>
+<p>Through vectorizing the abstracts in our corpus and using a classificaiton method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends.</p>
+<div id="text-vectorizaiton" class="section level1">
+<h1>Text Vectorizaiton</h1>
+<p><img src="www/tfidf.PNG" alt="tfidf" style="width:40.0%" /> <img src="www/doc2vec.PNG" alt="doc2vec" style="width:40.0%" /></p>
+<p>Above are confusion matricies that were created from testing the labeled data on a trained KNN classifier. As can be seen by the matricies above, both vecotrization methods had a fairly large amount of false positives. This could be an explanation for the large number of abstracts that were identified as big data.</p>
+</div>
 <div id="text-classificaiton" class="section level1">
 <h1>Text Classificaiton</h1>
-<p>582,530 abstracts were identified using TF-IDF to vecotrize the text and KNN to classify it. 484,362 abstracts were identified t #Trends</p>
+<p>582,530 abstracts were identified using TF-IDF to vecotrize the text and KNN to classify it. 484,362 abstracts were identified using Doc2Vec to vectorize the text with the KNN classifier as well. This abstract set most likely contains many false positives. The data set used is heavily biased towards health science abstracts, which increases the difficulty of building a classifier to identify abstracts not in this theme. Because the training set was approximately 50% big data and 50% not, it makes sense that the data would also be identified roughly 50% big data and 50% not when using nearest neighbors to classify.</p>
+</div>
+<div id="trends" class="section level1">
+<h1>Trends</h1>
+<div class="figure">
+<img src="www/tfidf_model.PNG" alt="TFIDF LDA" />
+<p class="caption">TFIDF LDA</p>
+</div>
+<div class="figure">
+<img src="www/doc2vec_model.PNG" alt="Doc2Vec LDA" />
+<p class="caption">Doc2Vec LDA</p>
+</div>
 </div>
 
 
