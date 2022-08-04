@@ -27,7 +27,7 @@ datatable(read.csv("tf_depart.csv"))
 The breakdown of department of the abstracts that were identified as big data using TF-IDF is shown above. The vast majority of the abstracts were from HSS which is representative of the proportion of HSS documents in the corpus.  
 
 ##KNN on Doc2Vec  
-484362 abstracts were idenified as relating to big data by using Doc2Vec to classify the documents and KNN to classify them. 
+484362 abstracts were identified as relating to big data by using Doc2Vec to classify the documents and KNN to classify them. 
 ```{r echo=FALSE}
 library(DT)
 datatable(read.csv("short_doc.csv"),options = list(pageLength = 3, columnDefs = list(list(

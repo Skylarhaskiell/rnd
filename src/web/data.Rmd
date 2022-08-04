@@ -22,7 +22,7 @@ Our raw dataset contained 1,262,655 projects from FYs 2008-2020.  In order to pr
 
 3.	Removed abstracts that were short phrases such as “Abstract not provided”.  
 
-Doc2Vec utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. The other vectorization method, TF-IDF, requires text processing to be effective.  
+Doc2Vec utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. The other factorization method, TF-IDF, requires text processing to be effective.  
  
 
 ## Text Data Preparation  
