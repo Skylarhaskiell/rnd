@@ -14,8 +14,7 @@ The figure shows the 10 main broad research areas using big-data and funded by a
 
 >Increasing research areas: clinical trials, clinical investigations, and health communities.  
     
->Declining research areas:cells and statistical analysis (NB: surprisingly for the case of statistical analysis, the negative trend is driven by less important of big data in that aera since 2016)
-
+>Declining research areas:cells and statistical analysis 
 
 ## 2. NMF with 20 topics   
 ![](www/bigdata_20topic_trends.png)
