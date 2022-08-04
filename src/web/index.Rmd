@@ -10,7 +10,7 @@ output:
 <br />
 
 ### **Project Background**  
-Research and development (R&D) is commonly defined as work undertaken to increase knowledge and new applications of previous knowledge. R&D spending increased $21 billion annually between 2010 and 2017 in the United States. A common metric for measuring a nation's R&D is the ratio of national R&D spending to national gross domestic product (GDP). In the U.S. this has been steadily rising since the mid-1990's. The federal government currently provides 21% of all U.S. R&D funding (Boroush, National Center for Science and Engineering Statistics [NCSES], 2021). [However] there is little data indicating the specific R&D areas that this funding supports.  
+Research and development (R&D) is commonly defined as work undertaken to increase knowledge and find new applications of previous knowledge. R&D spending increased $21 billion annually between 2010 and 2017 in the United States. A common metric for measuring a nation's R&D is the ratio of national R&D spending to national gross domestic product (GDP). In the U.S. this has been steadily rising since the mid-1990's. The federal government currently provides 21% of all U.S. R&D funding (Boroush, National Center for Science and Engineering Statistics [NCSES], 2021). [However] there is little data indicating the specific R&D areas that this funding supports.  
 
 
 ```{r, echo=FALSE, out.width="30%", out.extra='style="float:right; padding:5px; text-align: center"'}
@@ -57,9 +57,9 @@ We used Federal RePORTER, a publicly available database of federally funded R&D 
 
 ### **Results**  
 
-Almost all research areas were identified as using big data and contributing to the development of big data as a method. A non- numegative matrix factorization method with 30 topics was used to assess the trends in the research area covered by federal funding research to big data. The main research areas were identified as clinical trials, systems analysis, brain neuron imaging, infections, vaccines, social behavior, protein, cells, genes, and cancer.  
+Federally funded R&D in the area of big data includes contributions to big data methods and applications in many different fields including neurology, vaccines, and social behavior.  These results lead us to the conclusion that big data utilization has become widespread in research.
 
-The analysis of trends shows that the use of big data has been declining in research areas related to protein, crop & plant production, cells, and genes. Research areas related to administrative & investigative centers, clinical trials, brain neuron, and statistical analysis are receiving more funding in projects utilizing big data. The area of statistical analysis has maintained a constant funding in projects using big data from 2008- 2020.   
+<!-- The analysis of trends shows that the use of big data has been declining in research areas related to protein, crop & plant production, cells, and genes. Research areas related to administrative & investigative centers, clinical trials, brain neuron, and statistical analysis are receiving more funding in projects utilizing big data. The area of statistical analysis has maintained a constant funding in projects using big data from 2008- 2020.   -->
 
 
 

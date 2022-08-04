@@ -61,7 +61,6 @@ if (window.hljs) {
 
 
 
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -86,9 +85,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -314,7 +310,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +329,7 @@ div.tocify {
   <a href="methods.html">Methods</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Findings
      
     <span class="caret"></span>
@@ -379,33 +375,37 @@ div.tocify {
 
 <p align="center">
 <p><font size="3"></p>
-<img src="www/reporter.PNG" alt="Federal RePORTER" />
+<img src="www/reporter.PNG" title="fig:" alt="Federal RePORTER" />
 </p>
-<div id="federal-reporter-database" class="section level2">
-<h2>Federal RePORTER Database</h2>
-<p>&quot;Federal RePORTER, a funded research and development grant database, contained a vast amount of information on federally funded R&amp;D and was utilized by researchers and policymakers to uncover insights&quot; (Linehan et al., 2022) Federal RePORTER data contains over 1 million federally funded R&amp;D grants from science and technology federal agencies from 2000 (Linehan et al., 2022). Project information included title, funding department, funding agency, principal investigator (PI), organization, start date, and total cost. Federal RePORTER data were submitted by the individual agencies including HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA. <br> <br> Federal RePORTER was retired in 2022, although archived data through fiscal year 2020 are available at <a href="https://federalreporter.nih.gov/" class="uri">https://federalreporter.nih.gov/</a>.</p>
+<p><br /></p>
+<div id="federal-reporter-database" class="section level3">
+<h3><strong>Federal RePORTER Database</strong></h3>
+<p>“Federal RePORTER, a funded research and development grant database, contained a vast amount of information on federally funded R&amp;D and was utilized by researchers and policymakers to uncover insights” (Linehan et al., 2022) Federal RePORTER data contains over 1 million federally funded R&amp;D grants from science and technology federal agencies from 2000 (Linehan et al., 2022). Project information included title, funding department, funding agency, principal investigator (PI), organization, start date, and total cost. Federal RePORTER data were submitted by the individual agencies including HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA. <br> <br> Federal RePORTER was retired in 2022, although archived data through fiscal year 2020 are available at <a href="https://federalreporter.nih.gov/" class="uri">https://federalreporter.nih.gov/</a>.</p>
+<p><br /></p>
 </div>
-<div id="data-wrangling" class="section level2">
-<h2>Data Wrangling</h2>
+<div id="data-wrangling" class="section level3">
+<h3><strong>Data Wrangling</strong></h3>
 <p>Our raw dataset contained 1,262,655 projects from FYs 2008-2020. In order to prepare this data for analysis we</p>
 <ol style="list-style-type: decimal">
 <li><p>Removed projects that were missing an abstract (42,536 projects),</p></li>
 <li><p>Deduplicated projects by title, abstract, and FY, and then removed the repeated project entries (71,902 projects), and</p></li>
 <li><p>Removed abstracts that were short phrases such as “Abstract not provided”.</p></li>
 </ol>
-<p>Doc2Vec utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. The other factorization method, TF-IDF, requires text processing to be effective.</p>
+<p>Doc2Vec utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. The other factorization method, TF-IDF, requires text processing to be effective.</p>
+<p><br /></p>
 </div>
-<div id="text-data-preparation" class="section level2">
-<h2>Text Data Preparation</h2>
+<div id="text-data-preparation" class="section level3">
+<h3><strong>Text Data Preparation</strong></h3>
 <p>We processed the abstract text of each project by</p>
 <ol style="list-style-type: decimal">
 <li><p>Removing phrases such as “description (provided by applicant)”,</p></li>
 <li><p>Performing standard Natural Language Processing (NLP) methods, specifically tokenization, lemmatization, stop word removal, and addition of bi-grams and tri-grams, and</p></li>
 <li><p>Discarding length one tokens and numeric tokens except those of length four (years).</p></li>
 </ol>
+<p><br /></p>
 </div>
-<div id="sources" class="section level2">
-<h2>Sources</h2>
+<div id="sources" class="section level3">
+<h3><strong>Sources</strong></h3>
 <p>Linehan K, Oh E, Thurston J, Siwe GL, Garrett M, Keller S, Shipp S, Kindlon A, Jankowski, J. Technical Report - Detecting Federally Funded Research and Development Trends Using Machine Learning and Information Retrieval Methods, Technical Report. BI-2022-1531. Proceedings of the Biocomplexity Institute. University of Virginia; 2022 May. DOI: <a href="https://doi.org/10.18130/4c3g-k017" class="uri">https://doi.org/10.18130/4c3g-k017</a>.</p>
 </div>
 
