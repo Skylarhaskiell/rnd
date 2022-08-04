@@ -380,12 +380,12 @@ div.tocify {
 <p><font size="3"></p>
 <div id="training-set-results" class="section level2">
 <h2>1. Training Set Results</h2>
-<p>Among 1200 abstracts, 40% (487/1200) were effectively big data related. The term matching provide a precision to classify abstracts into big data and non big data by ((557+444)/1200 = 83.4%) Most of the error from the term-matching in labeling is to classify an abstract that is non big data related as big data based on the name (156/713) 21.8%.</p>
+<p>Among 1200 abstracts, 40% (487/1200) were big data related. Most of the error from the term-matching in labeling is to classify an abstract that is non big data related as big data based on the name (156/713) 21.8%.</p>
 <div class="figure">
 <img src="www/term_matching.PNG" style="width:75.0%" />
 
 </div>
-<p>There was no high difference in labeling between experts. In overall, 79.3% ((64+32)/121) of abstracts have been identically labelled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data. <br></p>
+<p>There was no high difference in labeling between experts. Overall, 79.3% ((64+32)/121) of abstracts have been identically labeled by the 02 experts. Most of the assigning difference is from assigning a non big-data abstracts as big-data. <br></p>
 <div class="figure">
 <img src="www/expert_check.PNG" style="width:75.0%" />
 
@@ -393,41 +393,27 @@ div.tocify {
 </div>
 <div id="knn-performance-on-test-set" class="section level2">
 <h2>2. KNN Performance on Test Set</h2>
-<p>Below are confusion matrices that were created from testing the labeled data on a trained KNN classifier. As can be seen by the matrices above, both vectorization methods had a fairly large amount of false positives. This could be an explanation for the large number of abstracts that were identified as big data.</p>
-<p><img src="www/tfidf.PNG" alt="tfidf" style="width:40.0%" /> <img src="www/doc2vec.PNG" alt="doc2vec" style="width:40.0%" /></p>
+<p><img src="www/tfidf.PNG" alt="tfidf" style="width:40.0%" /> <img src="www/doc2vec.PNG" alt="doc2vec" style="width:40.0%" /><br />
+Above are confusion matrices that were created from testing the labeled data on a trained KNN classifier. As can be seen by the matrices above (in section 1), both vectorization methods had a fairly large amount of false positives. This could be one explanation for the large number of abstracts that were identified as big data.</p>
+<p><img src="www/tfidf_stats.PNG" alt="TFIDF LDA" /><br />
+The weighted average precision for TF-IDF was 0.63, as was the weighted average recall. These metrics were calculated based on the manually labeled training set. The precision means that 63% of the abstracts were identified as big data were in fact relavent to big data. The recall means that 63% of the abstracts relating to big data were selected as big data by the classifier. Further refinements on the model such as changing the number of nearest neighbors could increase the precision and accuracy.</p>
+<div class="figure">
+<img src="www/doc2vec_stats.PNG" />
+
+</div>
+<p>The weighted average precision for Doc2vec was 0.49, a the weighted average recall w as 0.55. These metrics were calculated based on the manually labeled training set. The precision means that 49% of the abstracts were identified as big data were in fact relavent to big data. The recall means that 55% of the abstracts relating to big data were selected as big data by the classifier. Further refinements on the model such as changing the number of nearest neighbors could increase the precision and accuracy.</p>
 </div>
 <div id="knn-on-full-corpus-big-data-corpus" class="section level2">
 <h2>3. KNN on Full Corpus : Big Data Corpus</h2>
-<p>257,123 abstracts were identified using TF-IDF to vectorize the text and KNN to classify it. 484,362 abstracts were identified using Doc2Vec to vectorize the text with the KNN classifier as well. The distribution of funding over time and by agency were calculated.<br />
-<img src="www/big_data_time.png" style="width:40.0%" /> <img src="www/big_data_agency.png" style="width:40.0%" /> <br> Through vectorizing the abstracts in our corpus and using a classification method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends.</p>
-</div>
-<div id="trends" class="section level2">
-<h2>4. Trends</h2>
-<div id="nmf-with-10-topics" class="section level3">
-<h3>4.1 NMF with 10 Topics</h3>
-<div class="figure">
-<img src="www/tfidf_model.PNG" />
-
-</div>
-<div class="figure">
-<img src="www/doc2vec_model.PNG" />
-
-</div>
-</div>
-<div id="nmf-with-20-topics" class="section level3">
-<h3>4.2 NMF with 20 Topics</h3>
-<div class="figure">
-<img src="www/tfidf_model20.png" />
-
-</div>
-</div>
-<div id="nmf-with-30-topics" class="section level3">
-<h3>4.3 NMF with 30 Topics</h3>
-<div class="figure">
-<img src="www/tfidf_model30.PNG" />
-
-</div>
-</div>
+<p>257,123 abstracts were identified using TF-IDF to vectorize the text and KNN to classify it. 484,362 abstracts were identified using Doc2Vec to vectorize the text with the KNN classifier The chart on the left shows the number of projects mentioning Big Dta over time. The numbers are fairly stable. The chart on the right shows the number of projects that mention Big data by agency over the time period 2008-2020. <img src="www/big_data_time.png" style="width:40.0%" /> <img src="www/big_data_agency.png" style="width:40.0%" /> <br> Through vectorizing the abstracts in our corpus and using a classification method, it was possible to identify whether abstracts were related to big data. Once these abstracts were identified, topic models were run on them to further identify sub-theme trends.</p>
+<!-- ## 4. Trends   -->
+<!-- ### 4.1 NMF with 10 Topics   -->
+<!-- ![](www/tfidf_model.PNG)    -->
+<!-- ![](www/doc2vec_model.PNG)    -->
+<!-- ### 4.2 NMF with 20 Topics    -->
+<!-- ![](www/tfidf_model20.png)   -->
+<!-- ### 4.3 NMF with 30 Topics    -->
+<!-- ![](www/tfidf_model30.PNG) -->
 </div>
 
 

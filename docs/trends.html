@@ -378,21 +378,39 @@ div.tocify {
 
 
 <p><font size="3"></p>
-<p>When Non-negative Matrix Factorization (NMF) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.</p>
-<div id="knn-classifier-with-tf-idf" class="section level2">
-<h2>1. KNN Classifier with TF-IDF</h2>
-<p><img src="www/tfidf_stats.PNG" alt="TFIDF LDA" /><br />
-The weighted average precision for TF-IDF was 0.63, as was the weighted average recall. These metrics were calculated based on the manually labeled training set. The precision means that 63% of the abstracts were identified as big data were in fact relavent to big data. The recall means that 63% of the abstracts relating to big data were selected as big data by the classifier. Further refinements on the model such as changing the number of nearest neighbors could increase the precision and accuracy.</p>
-<p><img src="www/tfidf_model.PNG" /> In the graph above, areas of research that use big data can be seen. Terms such as datum, method, and system in p7 show that this topic represents new work in data science methods. The n value shows that 186,840 abstracts fell into this topic between the years of 2008 and 2020.</p>
+<p>When Non-negative Matrix Factorization (NMF) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.<br />
+For all of the figures below, the first is using a set of abstracts identified as using big data when using TF-IDF to vectorize the abstracts and KNN to classify them. The second figure in each section uses Doc2vec to vectorize the abstracts and KNN to classify.</p>
+<div id="nmf-with-10-topics" class="section level2">
+<h2>1. NMF with 10 topics</h2>
+<p>The figure shows the 10 main broad research areas using big-data and funded by a federal agency. The research areas cover clinical trial, clinical investigation, health community, brain and neural cognitive, food safety, data analysis, conference, cancer, child and cell.</p>
+<blockquote>
+<p>There is an increased interest of using big data in clinical trial, clinical investigation and health community.</p>
+</blockquote>
+<blockquote>
+<p>However, the use of big data in some research areas related to cell and statistical analysis is declining. (NB: surprisingly for the case of statistical analysis, the negative trend is driven by less important of big data in that aera since 2016)</p>
+</blockquote>
 </div>
-<div id="knn-classifier-with-doc2vec" class="section level2">
-<h2>2. KNN Classifier with Doc2vec</h2>
-<div class="figure">
-<img src="www/doc2vec_stats.PNG" alt="Doc2Vec LDA" />
-<p class="caption">Doc2Vec LDA</p>
+<div id="nmf-with-20-topics" class="section level2">
+<h2>2. NMF with 20 topics</h2>
+<p>We increased the number of topics to have a more granular understanding of the research areas using big data. The result is similar to the 10 topics with some additional research areas emerging on imaging, vaccine, social behavior.</p>
+<blockquote>
+<p>The increasing research area is related to clinical trial, patient care and data analysis.</p>
+</blockquote>
+<blockquote>
+<p>The declining research area is related to protein, cell and lung.</p>
+</blockquote>
 </div>
-<p>The weighted average precision for Doc2vec was 0.49, a the weighted average recall w as 0.55. These metrics were calculated based on the manually labeled training set. The precision means that 49% of the abstracts were identified as big data were in fact relavent to big data. The recall means that 55% of the abstracts relating to big data were selected as big data by the classifier. Further refinements on the model such as changing the number of nearest neighbors could increase the precision and accuracy.</p>
-<p><img src="www/doc2vec_model.PNG" /> Terms such as datum, model, and system idenify p9 above as a topic that most likely relates new methods in big data. 347,219 documents were selected as a part of this topic group as can be seen by the n value above.</p>
+<div id="nmf-with-30-topics" class="section level2">
+<h2>3. NMF with 30 topics</h2>
+<p>Finally, we expanded the number of topic to 30 in order to have a more large view of topics funded by a federal agency that use big data. In addition to the research area described with 10 and 20 topics, other research topics that support the use of big data cover drug development, risk intervention, HIV, conferences and meeting, learning language and speech.</p>
+<blockquote>
+<p>As described with 20 topics, the main area with an increase in funding that utilize big data covers clinical trial, patient care.</p>
+</blockquote>
+<blockquote>
+<p>The areas with decreased funding are related to protein, crop and cell.</p>
+</blockquote>
+<!-- ![](www/doc2vec_model.PNG) -->
+<!-- Terms such as datum, model, and system idenify p9 above as a topic that most likely relates new methods in big data. 347,219 documents were selected as a part of this topic group as can be seen by the n value above.  -->
 <!-- ## 3. Model Comparission   -->
 <!-- Looking at both of the models above, there are many topic groups in health science that utilize big data techniques to conduct their research. There are is also a clear topic that appears that represents abstracts in the corpus that relate directly to big data methods.  -->
 </div>

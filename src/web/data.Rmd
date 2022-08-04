@@ -8,7 +8,7 @@ title: "Data"
 </p>  
 
 ## Federal RePORTER Database
-"Federal RePORTER, a recently retired federally funded research and development grant database, contained a vast amount of information on federally funded R&D and was utilized by researchers and policymakers to uncover insights" (Linehan et al., 2022) Federal RePORTER data contains over 1 million federally funded R&D grants from science and technology federal agencies from 2000 (Linehan et al., 2022). Project information included title, funding department, funding agency, principal investigator (PI), organization, start date, and total cost. Federal RePORTER data were submitted by the individual agencies including HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA.
+"Federal RePORTER, a funded research and development grant database, contained a vast amount of information on federally funded R&D and was utilized by researchers and policymakers to uncover insights" (Linehan et al., 2022) Federal RePORTER data contains over 1 million federally funded R&D grants from science and technology federal agencies from 2000 (Linehan et al., 2022). Project information included title, funding department, funding agency, principal investigator (PI), organization, start date, and total cost. Federal RePORTER data were submitted by the individual agencies including HHS, NSF, USDA, NASA, DOD, VA, ED, and EPA.
 <br>
 <br>
 Federal RePORTER was retired in 2022, although archived data through fiscal year 2020 are available at https://federalreporter.nih.gov/.  
@@ -22,7 +22,7 @@ Our raw dataset contained 1,262,655 projects from FYs 2008-2020.  In order to pr
 
 3.	Removed abstracts that were short phrases such as “Abstract not provided”.  
 
-Doc2Vec, a method we selected, utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. Our other vectorization method, TF-IDF, requires text processing to be effective.  
+Doc2Vec utilizes the raw abstract text. It takes items such as common words (i.e. the, and, it) and non-alphabetic characters into account to give documents as a whole meaning. The other vectorization method, TF-IDF, requires text processing to be effective.  
  
 
 ## Text Data Preparation  
