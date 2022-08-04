@@ -53,8 +53,7 @@ We used Federal RePORTER, a publicly available database of federally funded R&D 
 * We applied a topic model to the abstracts identified as big data related in order to identify prominent big data research areas.  We used linear regression to analyze these topic trends over time.  
 
 ### **Results**  
-Almost all research areas were identifies as using big data and contributing to the development of big data as a method. By using  a model with 30 topics to assess the granularity in the research area covered by federal funding research to big data, the main research area was identified as clinical trials, systems analysis, brain neuron imaging, infections, vaccines, social behavior, protein, cells, genes, and cancer.   
-<br />  
+Almost all research areas were identifies as using big data and contributing to the development of big data as a method. By using  a model with 30 topics to assess the granularity in the research area covered by federal funding research to big data, the main research area was identified as clinical trials, systems analysis, brain neuron imaging, infections, vaccines, social behavior, protein, cells, genes, and cancer.  
 
 The trends analysis shows that the use of big data has been declining in research areas related to protein, crop & plant production, cells, and genes. Research areas related to administrative and investigative centers, clinical trials, brain neuron, and statistical analysis are receiving more funding in projects utilizing big data. The area of statistical analysis has maintained a constant funding in projects using big data from 2008- 2020.   
 
