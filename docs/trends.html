@@ -377,37 +377,39 @@ div.tocify {
 </div>
 
 
-<p><font size="3"></p>
-<p>When Non-negative Matrix Factorization (NMF) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.<br />
-For all of the figures below, the first is using a set of abstracts identified as using big data when using TF-IDF to vectorize the abstracts and KNN to classify them. The second figure in each section uses Doc2vec to vectorize the abstracts and KNN to classify.</p>
+<p><font size="3"><br />
+Below are figures shoing the to 10, 20, and 30 topics respecitvely that appear when non-negative matrix facotorizaiton (NMF) was run on a corpus of documents identified as relating to big data. For these figures, the corpus selected was from the documents identified using TF-IDF and KNN. This model had far less false positives than Doc2Vec and KNN, making it more accurate.</p>
+<!-- When Non-negative Matrix Factorization (NMF) was run on the corpus of documents identified as big data, it was seen that 10 main themes emerged. On the Doc2Vec resutls, it was clear that 6 of the 10 topics clearly relate to health sciences. On the TF-IDF results, 7 of the 10 topics identified were clearly related to health sciences.    -->
+<!-- For all of the figures below, the first is using a set of abstracts identified as using big data when using TF-IDF to vectorize the abstracts and KNN to classify them. The second figure in each section uses Doc2vec to vectorize the abstracts and KNN to classify. -->
 <div id="nmf-with-10-topics" class="section level2">
 <h2>1. NMF with 10 topics</h2>
-<p>The figure shows the 10 main broad research areas using big-data and funded by a federal agency. The research areas cover clinical trial, clinical investigation, health community, brain and neural cognitive, food safety, data analysis, conference, cancer, child and cell.</p>
+<p><img src="www/bigdata_10topic_trends.png" /> The figure shows the 10 main broad research areas using big-data and funded by a federal agency. The research areas cover clinical trial, clinical investigation, health community, brain and neural cognitive, food safety, data analysis, conference, cancer, child and cell.</p>
 <blockquote>
-<p>There is an increased interest of using big data in clinical trial, clinical investigation and health community.</p>
+<p>Increasing research areas: clinical trials, clinical investigations, and health communities.</p>
 </blockquote>
 <blockquote>
-<p>However, the use of big data in some research areas related to cell and statistical analysis is declining. (NB: surprisingly for the case of statistical analysis, the negative trend is driven by less important of big data in that aera since 2016)</p>
+<p>Declining research areas:cells and statistical analysis (NB: surprisingly for the case of statistical analysis, the negative trend is driven by less important of big data in that aera since 2016)</p>
 </blockquote>
 </div>
 <div id="nmf-with-20-topics" class="section level2">
 <h2>2. NMF with 20 topics</h2>
-<p>We increased the number of topics to have a more granular understanding of the research areas using big data. The result is similar to the 10 topics with some additional research areas emerging on imaging, vaccine, social behavior.</p>
+<p><img src="www/bigdata_20topic_trends.png" /> We increased the number of topics to have a more granular understanding of the research areas using big data. The result is similar to the 10 topics with some additional research areas emerging on imaging, vaccine, social behavior.</p>
 <blockquote>
-<p>The increasing research area is related to clinical trial, patient care and data analysis.</p>
+<p>Increasing research areas: clinical trials, patient care and data analysis.</p>
 </blockquote>
 <blockquote>
-<p>The declining research area is related to protein, cell and lung.</p>
+<p>Declining research areas: proteins, cells, and lungs.</p>
 </blockquote>
 </div>
 <div id="nmf-with-30-topics" class="section level2">
 <h2>3. NMF with 30 topics</h2>
+<p>![(www/bigdata_30topic_trends.png)</p>
 <p>Finally, we expanded the number of topic to 30 in order to have a more large view of topics funded by a federal agency that use big data. In addition to the research area described with 10 and 20 topics, other research topics that support the use of big data cover drug development, risk intervention, HIV, conferences and meeting, learning language and speech.</p>
 <blockquote>
-<p>As described with 20 topics, the main area with an increase in funding that utilize big data covers clinical trial, patient care.</p>
+<p>Increasing research areaas: clinical trials and patient care.</p>
 </blockquote>
 <blockquote>
-<p>The areas with decreased funding are related to protein, crop and cell.</p>
+<p>Declining research areas: proteins, crops, and cells.</p>
 </blockquote>
 <!-- ![](www/doc2vec_model.PNG) -->
 <!-- Terms such as datum, model, and system idenify p9 above as a topic that most likely relates new methods in big data. 347,219 documents were selected as a part of this topic group as can be seen by the n value above.  -->

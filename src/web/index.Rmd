@@ -11,7 +11,7 @@ output:
 
 ### **Project Background**  
 Research and development (R&D) is commonly defined as work undertaken to increase knowledge and new applications of previous knowledge. R&D spending increased $21 billion annually between 2010 and 2017 in the United States. A common metric for measuring a nation's R&D is the ratio of national R&D spending to national gross domestic product (GDP). In the U.S. this has been steadily rising since the mid-1990's. The federal government currently provides 21% of all U.S. R&D funding (Boroush, National Center for Science and Engineering Statistics [NCSES], 2021). [However] there is little data indicating the specific R&D areas that this funding supports.  
-<span style="color:blue">Did this paragraph come directly from the tech report? if so it needs to be in quotes and cited. No i paraphrased it - skylar </span>
+
 
 ```{r, echo=FALSE, out.width="30%", out.extra='style="float:right; padding:5px; text-align: center"'}
 knitr::include_graphics("www/big-data-2.jpg")
@@ -41,7 +41,7 @@ This project is part of on-going work sponsored by the National Center for Scien
 <br />
 
 ### **Data**  
-We used Federal RePORTER, a publicly available database of federally funded R&D grants, which contains common scientific award data such as project title, abstract, and funding amount. This database was designed to be “a repository of data and tools” that “promote[d] transparency and engage[d] the public, the research community, and agencies to describe federal science research investments and provide empirical data for science policy” (U.S. Department of Health and Human Services, 2020). Federal RePORTER contains more than 1 million grants from science and technology federal agencies beginning in fiscal year (FY) 2000; large scale project reporting began in FY 2008.  <span style="color:blue">Did this paragraph come directly from the tech report? I've changed it some if it did.</span>
+We used Federal RePORTER, a publicly available database of federally funded R&D grants, which contains common scientific award data such as project title, abstract, and funding amount. This database was designed to be “a repository of data and tools” that “promote[d] transparency and engage[d] the public, the research community, and agencies to describe federal science research investments and provide empirical data for science policy” (U.S. Department of Health and Human Services, 2020). Federal RePORTER contains more than 1 million grants from science and technology federal agencies beginning in fiscal year (FY) 2000; large scale project reporting began in FY 2008.  
   
 <br />
 
@@ -54,6 +54,8 @@ We used Federal RePORTER, a publicly available database of federally funded R&D 
 
 ### **Results**  
 Almost all research areas were identifies as using big data and contributing to the development of big data as a method. By using  a model with 30 topics to assess the granularity in the research area covered by federal funding research to big data, the main researchc area was identified as clinical trials, systems analysis, brain neuron imaging, infections, vaccines, social behavior, protein, cells, genes, and cancer.   
+<br />  
+
 The trends analysis shows that the use of big data has been declining in research areas related to protein, crop & plant production, cells, and genes. Research areas related to administrative and investigative centers, clinical trials, brain neuron, and statistical analysis are recieving more funding in projects utlizing big data. The area of statistical analysis has maintained a constant funding in projects using big data from 2008- 2020.   
 
 
@@ -64,6 +66,5 @@ The trends analysis shows that the use of big data has been declining in researc
 ### **Sources**
 Boroush M; National Center for Science and Engineering Statistics (NCSES). 2021. U.S. R&D Increased by \$51 Billion in 2018, to \$606 Billion; Estimate for 2019 Indicates a Further Rise to $656 Billion. NSF 21-324. Alexandria, VA: National Science Foundation. Available at https://ncses.nsf.gov/pubs/nsf21324/.
 
-OECD (2015), Frascati Manual 2015: Guidelines for Collecting and Reporting Data on Research and Experimental Development.  <span style="color:blue">Are we missing a citation in the text on this page for this source?</span>
 
 U.S. Department of Health and Human Services. (2020, March 6). STAR METRICS Federal Re- PORTER FAQS. Retrieved September 19, 2021 from https://federalreporter.nih.gov/Home/FAQ.
