@@ -94,3 +94,27 @@ Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified 
   
 ## **7. Future Steps**  
 In the future, an initial prioirty would be to run the Doc2Vec model with an increased vector and epoch(number of times the model is run) size. It would also be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thoroughly trained.
+
+
+### **Sources**
+G20 Research Group. (2018).  G20 Digital Economy Ministerial Declaration. http://www.g20.utoronto.ca/2021/210805-digital.html
+<br>
+International Telecommunication Union. (2018). G20 Digital Economy Task Force: Toolkit for Measuring the Digital Economy.  https://www.itu.int/en/ITU-D/Statistics/Documents/g20-detf-toolkit_FINAL.pdf
+<br>
+Ministry of Foreign Affairs of Japan. (2018). G20 Ministerial Statement on Trade and Digital Economy. https://www.mofa.go.jp/files/000486596.pdf
+<br>
+Organisation for Economic Co-operation and Development. Digitalisation and Innovation. https://www.oecd.org/g20/topics/digitalisation-and-innovation/ 
+<br>
+Organisation for Economic Co‐operation and Development. (2016). G20 Innovation Report 2016. https://www.oecd.org/china/G20-innovation-report-2016.pdf
+<br>
+Organisation for Economic Co‐operation and Development. (2017). Key Issues for Digital Transformation in the G20. https://www.oecd.org/g20/key-issues-for-digital-transformation-in-the-g20.pdf (accessed on 16 July 2018).
+<br>
+Organisation for Economic Co‐operation and Development. (2017). The Next Production Revolution: A report for the G20. https://www.oecd.org/g20/key-issues-for-digital-transformation-in-the-g20.pdf. 
+<br>
+Organisation for Economic Co-operation and Development. (2018).  Bridging the Digital Gender Divide: Include, Upskill, Innovate. https://www.oecd.org/digital/bridging-the-digital-gender-divide.pdf 
+<br>
+Organisation for Economic Co-operation and Development. (2019). Challenges to Consumer Policy in the Digital Age. https://www.oecd.org/sti/consumer/challenges-to-consumer-policy-in-the-digital-age.pdf
+<br>
+Organisation for Economic Co‐operation and Development. (2022). Recommendation of the Council on Artificial Intelligence. OECD/LEGAL/0449
+
+
