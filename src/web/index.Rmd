@@ -68,3 +68,5 @@ Boroush M; National Center for Science and Engineering Statistics (NCSES). 2021.
 
 
 U.S. Department of Health and Human Services. (2020, March 6). STAR METRICS Federal Re- PORTER FAQS. Retrieved September 19, 2021 from https://federalreporter.nih.gov/Home/FAQ.
+  
+[![ ](www/black-logo.png)](https://biocomplexity.virginia.edu/event/data-science-public-good-symposium-2022)
