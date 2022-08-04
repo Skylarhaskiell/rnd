@@ -434,30 +434,22 @@ div.tocify {
 <h2><strong>5. Supervised Learning: KNN</strong></h2>
 <div id="method" class="section level3">
 <h3>5.1 Method</h3>
-<div class="figure">
-<img src="www/supervised.PNG" alt="Graphic Source: https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/" style="width:60.0%" />
-<p class="caption">Graphic Source: <a href="https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/" class="uri">https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/</a></p>
-</div>
+<p><img src="www/supervised.PNG" style="width:60.0%" /><br />
+<font size="1"> Graphic Source: <a href="https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/" class="uri">https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/</a></font></p>
 <p>A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relevant while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <br></p>
-<div class="figure">
-<img src="www/knn.PNG" alt="Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, &quot;Article Classification using Natural Language Processing and Machine Learning&quot;; https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5" style="width:45.0%" />
-<p class="caption">Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, &quot;Article Classification using Natural Language Processing and Machine Learning&quot;; <a href="https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5" class="uri">https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5</a></p>
-</div>
+<p><img src="www/knn.PNG" style="width:45.0%" /><br />
+<font size="1"> Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, &quot;Article Classification using Natural Language Processing and Machine Learning&quot;; <a href="https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5" class="uri">https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5</a></font></p>
 <p>The method works by looking at the vectorization of each abstract and classifying it into a class based on its nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.</p>
 <p>The learning sample was randomly split into a training sample (80%) and a test sample (20%). The training is used to feed the KNN classifier and extract the key features from the prediction. The test sample is used to evaluate the model performance. The trained model was then applied to the abstracts throughout the entire corpus.</p>
 </div>
 <div id="evaluation" class="section level3">
 <h3>5.2 Evaluation</h3>
 <p>A confusion matrix can evaluate the performance of classification arguments. A true positive (TP) represents the number of properly classified abstracts as big data. A true negative (TN) represents the number of correctly classified abstracts that are not related to big data. A false positive (FP) represents the number of misclassified documents as being big data that are actually not related to big data. Finally, a false negative (FN) represents the number of abstracts misclassified as not being related to big data when it is about big data.</p>
-<div class="figure">
-<img src="www/evaluation.png" alt="Graphic Source: https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html" style="width:60.0%" />
-<p class="caption">Graphic Source: <a href="https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html" class="uri">https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html</a></p>
-</div>
+<p><img src="www/evaluation.png" style="width:60.0%" /><br />
+<font size="1"> Graphic Source: <a href="https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html" class="uri">https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html</a></font></p>
 <p><br> We can use these metrics to calculate the accuracy, precision, recall, and F1 score, whose calculations are shown in the graphic below.</p>
-<div class="figure">
-<img src="www/metrics.png" alt="Graphic Source: https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/" style="width:45.0%" />
-<p class="caption">Graphic Source: <a href="https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/" class="uri">https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/</a></p>
-</div>
+<p><img src="www/metrics.png" style="width:45.0%" /><br />
+<font size="1"> Graphic Source: <a href="https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/" class="uri">https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/</a></font></p>
 </div>
 </div>
 <div id="topic-modeling-of-trends-in-rd" class="section level2">
@@ -469,7 +461,7 @@ For topic modeling, Non-Negative Matrix Factorization (NMF) was used. NMF is an 
 </div>
 <div id="future-steps" class="section level2">
 <h2><strong>7. Future Steps</strong></h2>
-<p>In the future, it would be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thoroughly trained.</p>
+<p>In the future, an initial prioirty would be to run the Doc2Vec model with an increased vector and epoch(number of times the model is run) size. It would also be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thoroughly trained.</p>
 </div>
 </div>
 

@@ -50,11 +50,16 @@ Doc2Vec is another method to vectorize a document, which takes into account the 
 
 ### 5.1 Method  
 
-![Graphic Source: https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/](www/supervised.PNG){width=60% }  
+![](www/supervised.PNG){width=60% }  
+<font size="1"> Graphic Source: https://lawtomated.com/supervised-vs-unsupervised-learning-which-is-better/</font>  
+
 
 A supervised learning approach was used to label abstracts as big data related or not. Compared to an unsupervised method, this approach identifies abstracts that are theme relevant while also measuring the performance of the classifier algorithm. This approach requires a set of labeled data where the labels are binary: big data or not. <br> 
 
-![Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, "Article Classification using Natural Language Processing and Machine Learning"; https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5](www/knn.PNG){width=45% }  
+![](www/knn.PNG){width=45% }  
+<font size="1"> Graphic Source: T. T. Dien, B. H. Loc and N. Thai-Nghe, "Article Classification using Natural Language Processing and Machine Learning"; https://medium.com/@srishtisawla/k-nearest-neighbors-f77f6ee6b7f5</font>   
+
+
 
 The method works by looking at the vectorization of each abstract and classifying it into a class based on its nearest neighbors. For the purposes of this project, we used 10 nearest neighbors.  
 
@@ -64,11 +69,15 @@ The learning sample was randomly split into a training sample (80%) and a test s
 
 A confusion matrix can evaluate the performance of classification arguments. A true positive (TP) represents the number of properly classified abstracts as big data. A true negative (TN) represents the number of correctly classified abstracts that are not related to big data. A false positive (FP) represents the number of misclassified documents as being big data that are actually not related to big data. Finally, a false negative (FN) represents the number of abstracts misclassified as not being related to big data when it is about big data.  
 
-![Graphic Source: https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html](www/evaluation.png){width=60% } 
+![](www/evaluation.png){width=60% }   
+<font size="1"> Graphic Source: https://www.kdnuggets.com/2020/04/performance-evaluation-metrics-classification.html</font>  
+
 
 <br> We can use these metrics to calculate the accuracy, precision, recall, and F1 score, whose calculations are shown in the graphic below.
 
-![Graphic Source: https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/](www/metrics.png){width=45% } 
+![](www/metrics.png){width=45% }  
+<font size="1"> Graphic Source: https://www.tutorialexample.com/an-introduction-to-accuracy-precision-recall-f1-score-in-machine-learning-machine-learning-tutorial/</font>  
+
 
 
 ## **6. Topic Modeling of Trends in R&D**  
@@ -84,4 +93,4 @@ Simple Exploratory Data Analysis (EDA) was also run on the abstracts identified 
 
   
 ## **7. Future Steps**  
-In the future, it would be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thoroughly trained.
+In the future, an initial prioirty would be to run the Doc2Vec model with an increased vector and epoch(number of times the model is run) size. It would also be useful to continue to optimize the classification method and explore other methods such as SVM. It would also be useful to increase the number of training documents so that the methods can be more thoroughly trained.
